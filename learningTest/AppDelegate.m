@@ -23,6 +23,7 @@
 #import "SortVC.h"
 #import <objc/runtime.h>
 #import "KvokvcVC.h"
+#import "RuntimeVC.h"
 @interface AppDelegate ()
 
 @property(nonatomic,assign) BOOL shouldStopBg;
@@ -45,7 +46,7 @@
 //    DataVC *vc = [DataVC new];
 //    TestVC *vc = [TestVC new];
 //    GCDVC *vc = [GCDVC new];
-    KvokvcVC *vc = [KvokvcVC new];
+    RuntimeVC *vc = [RuntimeVC new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self netWorkChangeEvent];

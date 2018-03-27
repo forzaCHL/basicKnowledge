@@ -42,6 +42,11 @@
 		1806DC7C1FAB2039007A6C74 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1806DC701FAB2039007A6C74 /* README.md */; };
 		181E1DFB1F94582B00EFCF6F /* GetTextHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E1DFA1F94582B00EFCF6F /* GetTextHeight.m */; };
 		182A4ABC2069D28B00EAC437 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2041FAC42B6004746EA /* IJKMediaFramework.framework */; };
+		182A4ACA206A186500EAC437 /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC0206A186400EAC437 /* RuntimeKit.m */; };
+		182A4ACB206A186500EAC437 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC3206A186400EAC437 /* TestClass+AssociatedObject.m */; };
+		182A4ACC206A186500EAC437 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC5206A186400EAC437 /* TestClass+Category.m */; };
+		182A4ACD206A186500EAC437 /* TestClass+SwapMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC7206A186400EAC437 /* TestClass+SwapMethod.m */; };
+		182A4ACE206A186500EAC437 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC9206A186400EAC437 /* TestClass.m */; };
 		183E24FB201EF4C400D38148 /* JAVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E24FA201EF4C400D38148 /* JAVAViewController.m */; };
 		18548765200F336600BAD94E /* AppPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18548764200F336600BAD94E /* AppPushViewController.m */; };
 		1857BF24200DF8DC007BCECC /* HTTPRequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857BF23200DF8DC007BCECC /* HTTPRequestVC.m */; };
@@ -199,6 +204,16 @@
 		1806DC701FAB2039007A6C74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		181E1DF91F94582B00EFCF6F /* GetTextHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetTextHeight.h; sourceTree = "<group>"; };
 		181E1DFA1F94582B00EFCF6F /* GetTextHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetTextHeight.m; sourceTree = "<group>"; };
+		182A4ABF206A186400EAC437 /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
+		182A4AC0206A186400EAC437 /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
+		182A4AC2206A186400EAC437 /* TestClass+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+AssociatedObject.h"; sourceTree = "<group>"; };
+		182A4AC3206A186400EAC437 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
+		182A4AC4206A186400EAC437 /* TestClass+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+Category.h"; sourceTree = "<group>"; };
+		182A4AC5206A186400EAC437 /* TestClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
+		182A4AC6206A186400EAC437 /* TestClass+SwapMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+SwapMethod.h"; sourceTree = "<group>"; };
+		182A4AC7206A186400EAC437 /* TestClass+SwapMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+SwapMethod.m"; sourceTree = "<group>"; };
+		182A4AC8206A186400EAC437 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		182A4AC9206A186400EAC437 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		183E24F9201EF4C400D38148 /* JAVAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAVAViewController.h; sourceTree = "<group>"; };
 		183E24FA201EF4C400D38148 /* JAVAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAVAViewController.m; sourceTree = "<group>"; };
 		18548763200F336600BAD94E /* AppPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPushViewController.h; sourceTree = "<group>"; };
@@ -465,6 +480,39 @@
 				181E1DFA1F94582B00EFCF6F /* GetTextHeight.m */,
 			);
 			path = "文字高度";
+			sourceTree = "<group>";
+		};
+		182A4ABD206A186400EAC437 /* ThirdBasicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				182A4ABE206A186400EAC437 /* Runtime */,
+				182A4AC1206A186400EAC437 /* TestClass */,
+			);
+			path = ThirdBasicDemo;
+			sourceTree = "<group>";
+		};
+		182A4ABE206A186400EAC437 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				182A4ABF206A186400EAC437 /* RuntimeKit.h */,
+				182A4AC0206A186400EAC437 /* RuntimeKit.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		182A4AC1206A186400EAC437 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				182A4AC2206A186400EAC437 /* TestClass+AssociatedObject.h */,
+				182A4AC3206A186400EAC437 /* TestClass+AssociatedObject.m */,
+				182A4AC4206A186400EAC437 /* TestClass+Category.h */,
+				182A4AC5206A186400EAC437 /* TestClass+Category.m */,
+				182A4AC6206A186400EAC437 /* TestClass+SwapMethod.h */,
+				182A4AC7206A186400EAC437 /* TestClass+SwapMethod.m */,
+				182A4AC8206A186400EAC437 /* TestClass.h */,
+				182A4AC9206A186400EAC437 /* TestClass.m */,
+			);
+			path = TestClass;
 			sourceTree = "<group>";
 		};
 		183E24F8201EF4B700D38148 /* JAVA */ = {
@@ -805,6 +853,7 @@
 		18EAD1F920170DAD00F23BD4 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				182A4ABD206A186400EAC437 /* ThirdBasicDemo */,
 				18EAD1FD20170E0E00F23BD4 /* RuntimeVC.h */,
 				18EAD1FE20170E0E00F23BD4 /* RuntimeVC.m */,
 			);
@@ -1036,6 +1085,7 @@
 				18AF92262003792800BA61B0 /* NavViewController.m in Sources */,
 				1806DC491FAB1D00007A6C74 /* SDWebImageDecoder.m in Sources */,
 				187E5ABD205B933100181FC7 /* CategerVC.m in Sources */,
+				182A4ACB206A186500EAC437 /* TestClass+AssociatedObject.m in Sources */,
 				1806DC791FAB2039007A6C74 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1806DC501FAB1D00007A6C74 /* UIImage+MultiFormat.m in Sources */,
 				1806DC7B1FAB2039007A6C74 /* ViewController+MASAdditions.m in Sources */,
@@ -1043,6 +1093,7 @@
 				185E29A01FAB196F00CB8531 /* PlayerVC.m in Sources */,
 				187E6EF61F99881400CDABA1 /* GCDVC.m in Sources */,
 				185E299C1FAB18D000CB8531 /* UIRefreshControl+AFNetworking.m in Sources */,
+				182A4ACA206A186500EAC437 /* RuntimeKit.m in Sources */,
 				186A11F92068F397000C5B3C /* Book.m in Sources */,
 				1857BF24200DF8DC007BCECC /* HTTPRequestVC.m in Sources */,
 				1806DC481FAB1D00007A6C74 /* SDWebImageCompat.m in Sources */,
@@ -1051,6 +1102,7 @@
 				1806DC4F1FAB1D00007A6C74 /* UIImage+GIF.m in Sources */,
 				1806DC4C1FAB1D00007A6C74 /* SDWebImageManager.m in Sources */,
 				185E299B1FAB18D000CB8531 /* UIProgressView+AFNetworking.m in Sources */,
+				182A4ACD206A186500EAC437 /* TestClass+SwapMethod.m in Sources */,
 				185E29951FAB18D000CB8531 /* AFAutoPurgingImageCache.m in Sources */,
 				181E1DFB1F94582B00EFCF6F /* GetTextHeight.m in Sources */,
 				1806DC751FAB2039007A6C74 /* MASLayoutConstraint.m in Sources */,
@@ -1087,6 +1139,8 @@
 				185E299D1FAB18D000CB8531 /* UIWebView+AFNetworking.m in Sources */,
 				186A11EA2068D651000C5B3C /* Dog.m in Sources */,
 				185E298E1FAB18D000CB8531 /* AFNetworkReachabilityManager.m in Sources */,
+				182A4ACC206A186500EAC437 /* TestClass+Category.m in Sources */,
+				182A4ACE206A186500EAC437 /* TestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

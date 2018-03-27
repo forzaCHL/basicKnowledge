@@ -13,18 +13,33 @@
 //#import <objc/message.h>
 //#import<objc/runtime.h>
 
+#import "TestClass.h"
+#import "TestClass+Category.h"
+#import "TestClass+SwapMethod.h"
+#import "TestClass+AssociatedObject.h"
+#import "RuntimeKit.h"
+
+
 @interface RuntimeVC ()
 
 @end
 
 @implementation RuntimeVC
 
+#pragma mark ----------- 输出类名
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSString *className = NSStringFromClass([self class]);
+    NSLog(@"%@ will appear", className);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
 //    [self performSelector];
-    [self addProperty];
+//    [self addProperty];
+    
+    [self methodFromGithub];
 }
 #pragma mark ----------- 发送消息
 -(void)sendMsg{
@@ -60,6 +75,31 @@
 
 }
 
-
-
+#pragma mark ----------- 摘自github demo的一些用法
+-(void)methodFromGithub{
+    NSString *className = [RuntimeKit fetchClassName:[TestClass class]];
+    NSLog(@"测试类的类名为：%@\n", className);
+    
+    NSArray *ivarList = [RuntimeKit fetchIvarList:[TestClass class]];
+    NSLog(@"\n获取TestClass的成员变量列表:%@", ivarList);
+    
+    NSArray *propertyList = [RuntimeKit fetchPropertyList:[TestClass class]];
+    NSLog(@"\n获取TestClass的属性列表:%@", propertyList);
+    
+    NSArray *methodList = [RuntimeKit fetchMethodList:[TestClass class]];
+    NSLog(@"\n获取TestClass的方法列表：%@", methodList);
+    
+    NSArray *protocolList = [RuntimeKit fetchProtocolList:[TestClass class]];
+    NSLog(@"\n获取TestClass的协议列表：%@", protocolList);
+    TestClass *instance = [TestClass new];
+    [instance publicTestMethod2];
+    [instance performSelector:@selector(noThisMethod:) withObject:@"实例方法参数"];
+    
+    instance.dynamicAddProperty = @"我是动态添加的属性";
+    NSLog(@"%@", instance.dynamicAddProperty);
+    
+    
+    [instance swapMethod];
+    [instance method1];
+}
 @end

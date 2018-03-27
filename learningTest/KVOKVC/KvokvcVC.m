@@ -99,7 +99,7 @@
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"age"]) {
-        NSLog(@"age is changed! new=%@", [change valueForKey:NSKeyValueChangeNewKey]);
+        NSLog(@"warning!!! age is changed! newValue is %@", [change valueForKey:NSKeyValueChangeNewKey]);
     }else{
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
