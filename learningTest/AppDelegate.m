@@ -24,6 +24,7 @@
 #import <objc/runtime.h>
 #import "KvokvcVC.h"
 #import "RuntimeVC.h"
+#import "AssertVC.h"
 @interface AppDelegate ()
 
 @property(nonatomic,assign) BOOL shouldStopBg;
@@ -46,7 +47,7 @@
 //    DataVC *vc = [DataVC new];
 //    TestVC *vc = [TestVC new];
 //    GCDVC *vc = [GCDVC new];
-    RuntimeVC *vc = [RuntimeVC new];
+    AssertVC *vc = [AssertVC new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self netWorkChangeEvent];
