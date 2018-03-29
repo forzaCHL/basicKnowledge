@@ -47,7 +47,11 @@
 		182A4ACC206A186500EAC437 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC5206A186400EAC437 /* TestClass+Category.m */; };
 		182A4ACD206A186500EAC437 /* TestClass+SwapMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC7206A186400EAC437 /* TestClass+SwapMethod.m */; };
 		182A4ACE206A186500EAC437 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AC9206A186400EAC437 /* TestClass.m */; };
+		182A4AD2206A4C8B00EAC437 /* AssertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AD1206A4C8B00EAC437 /* AssertVC.m */; };
+		182A4AD5206A4FA300EAC437 /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A4AD4206A4FA300EAC437 /* MyAssertHandler.m */; };
 		183E24FB201EF4C400D38148 /* JAVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E24FA201EF4C400D38148 /* JAVAViewController.m */; };
+		18540A21206C7D2B0084CE29 /* NewFrameTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18540A20206C7D2A0084CE29 /* NewFrameTest.framework */; };
+		18540A22206C7D2B0084CE29 /* NewFrameTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18540A20206C7D2A0084CE29 /* NewFrameTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18548765200F336600BAD94E /* AppPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18548764200F336600BAD94E /* AppPushViewController.m */; };
 		1857BF24200DF8DC007BCECC /* HTTPRequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857BF23200DF8DC007BCECC /* HTTPRequestVC.m */; };
 		185BCE821F8F525E00D1BEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185BCE811F8F525E00D1BEBA /* AppDelegate.m */; };
@@ -109,6 +113,9 @@
 		187E6EF61F99881400CDABA1 /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6EF51F99881400CDABA1 /* GCDVC.m */; };
 		187E6EFA1F99C4C400CDABA1 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6EF91F99C4C400CDABA1 /* Helper.m */; };
 		187E6EFD1F99C62000CDABA1 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6EFC1F99C62000CDABA1 /* TestVC.m */; };
+		18A09C8E206B78BF006134BF /* libBaseCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A09C8D206B78BF006134BF /* libBaseCell.a */; };
+		18A09C91206B78EB006134BF /* StaticLibraryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A09C90206B78EB006134BF /* StaticLibraryVC.m */; };
+		18A09C96206B81D0006134BF /* ios库.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A09C95206B81D0006134BF /* ios库.png */; };
 		18AF92262003792800BA61B0 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF92252003792800BA61B0 /* NavViewController.m */; };
 		18EAD1FF20170E0E00F23BD4 /* RuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAD1FE20170E0E00F23BD4 /* RuntimeVC.m */; };
 		AF44B2305CF343B3B95319AE /* libPods-learningTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD34E29CE458EF5F8822F19 /* libPods-learningTest.a */; };
@@ -138,6 +145,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18540A22206C7D2B0084CE29 /* NewFrameTest.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +222,13 @@
 		182A4AC7206A186400EAC437 /* TestClass+SwapMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+SwapMethod.m"; sourceTree = "<group>"; };
 		182A4AC8206A186400EAC437 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		182A4AC9206A186400EAC437 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		182A4AD0206A4C8B00EAC437 /* AssertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssertVC.h; sourceTree = "<group>"; };
+		182A4AD1206A4C8B00EAC437 /* AssertVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssertVC.m; sourceTree = "<group>"; };
+		182A4AD3206A4FA300EAC437 /* MyAssertHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
+		182A4AD4206A4FA300EAC437 /* MyAssertHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAssertHandler.m; sourceTree = "<group>"; };
 		183E24F9201EF4C400D38148 /* JAVAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAVAViewController.h; sourceTree = "<group>"; };
 		183E24FA201EF4C400D38148 /* JAVAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAVAViewController.m; sourceTree = "<group>"; };
+		18540A20206C7D2A0084CE29 /* NewFrameTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewFrameTest.framework; sourceTree = "<group>"; };
 		18548763200F336600BAD94E /* AppPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPushViewController.h; sourceTree = "<group>"; };
 		18548764200F336600BAD94E /* AppPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppPushViewController.m; sourceTree = "<group>"; };
 		1857BF22200DF8DC007BCECC /* HTTPRequestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequestVC.h; sourceTree = "<group>"; };
@@ -335,6 +348,11 @@
 		187E6EF91F99C4C400CDABA1 /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		187E6EFB1F99C62000CDABA1 /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		187E6EFC1F99C62000CDABA1 /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		18A09C8C206B78BF006134BF /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		18A09C8D206B78BF006134BF /* libBaseCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaseCell.a; sourceTree = "<group>"; };
+		18A09C8F206B78EB006134BF /* StaticLibraryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryVC.h; sourceTree = "<group>"; };
+		18A09C90206B78EB006134BF /* StaticLibraryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryVC.m; sourceTree = "<group>"; };
+		18A09C95206B81D0006134BF /* ios库.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios库.png"; sourceTree = "<group>"; };
 		18AF92242003792800BA61B0 /* NavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		18AF92252003792800BA61B0 /* NavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		18EAD1FD20170E0E00F23BD4 /* RuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVC.h; sourceTree = "<group>"; };
@@ -359,6 +377,8 @@
 				185E28E01FAAF8D400CB8531 /* MediaPlayer.framework in Frameworks */,
 				185E28DE1FAAF8C600CB8531 /* CoreVideo.framework in Frameworks */,
 				1878B2071FAC4310004746EA /* libc++.tbd in Frameworks */,
+				18A09C8E206B78BF006134BF /* libBaseCell.a in Frameworks */,
+				18540A21206C7D2B0084CE29 /* NewFrameTest.framework in Frameworks */,
 				185E28DC1FAAF8BE00CB8531 /* CoreMedia.framework in Frameworks */,
 				185E28DA1FAAF8B500CB8531 /* CoreGraphics.framework in Frameworks */,
 				185E28D81FAAF8AD00CB8531 /* AVFoundation.framework in Frameworks */,
@@ -515,6 +535,17 @@
 			path = TestClass;
 			sourceTree = "<group>";
 		};
+		182A4ACF206A4C7900EAC437 /* 断言NSAssert */ = {
+			isa = PBXGroup;
+			children = (
+				182A4AD0206A4C8B00EAC437 /* AssertVC.h */,
+				182A4AD1206A4C8B00EAC437 /* AssertVC.m */,
+				182A4AD3206A4FA300EAC437 /* MyAssertHandler.h */,
+				182A4AD4206A4FA300EAC437 /* MyAssertHandler.m */,
+			);
+			path = "断言NSAssert";
+			sourceTree = "<group>";
+		};
 		183E24F8201EF4B700D38148 /* JAVA */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +576,7 @@
 		185BCE741F8F525E00D1BEBA = {
 			isa = PBXGroup;
 			children = (
+				18540A20206C7D2A0084CE29 /* NewFrameTest.framework */,
 				185BCE7F1F8F525E00D1BEBA /* learningTest */,
 				185BCE9B1F8F525E00D1BEBA /* learningTestTests */,
 				185BCEA61F8F525E00D1BEBA /* learningTestUITests */,
@@ -567,6 +599,8 @@
 		185BCE7F1F8F525E00D1BEBA /* learningTest */ = {
 			isa = PBXGroup;
 			children = (
+				18A09C88206B78BF006134BF /* 静态库制作 */,
+				182A4ACF206A4C7900EAC437 /* 断言NSAssert */,
 				186A11E42068D41F000C5B3C /* KVOKVC */,
 				186A11E02068C799000C5B3C /* 排序 */,
 				186747152064FFC500B805A4 /* UIViewAnimation */,
@@ -841,6 +875,42 @@
 			path = "正则表达式判断";
 			sourceTree = "<group>";
 		};
+		18A09C88206B78BF006134BF /* 静态库制作 */ = {
+			isa = PBXGroup;
+			children = (
+				18A09C95206B81D0006134BF /* ios库.png */,
+				18A09C89206B78BF006134BF /* BaseCell */,
+				18A09C8F206B78EB006134BF /* StaticLibraryVC.h */,
+				18A09C90206B78EB006134BF /* StaticLibraryVC.m */,
+			);
+			path = "静态库制作";
+			sourceTree = "<group>";
+		};
+		18A09C89206B78BF006134BF /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				18A09C8A206B78BF006134BF /* include */,
+				18A09C8D206B78BF006134BF /* libBaseCell.a */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		18A09C8A206B78BF006134BF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18A09C8B206B78BF006134BF /* BaseCell */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		18A09C8B206B78BF006134BF /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				18A09C8C206B78BF006134BF /* BaseCell.h */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
 		18AF9220200378CC00BA61B0 /* 导航栏细线 */ = {
 			isa = PBXGroup;
 			children = (
@@ -984,6 +1054,7 @@
 				185BCE901F8F525E00D1BEBA /* LaunchScreen.storyboard in Resources */,
 				1806DC711FAB2039007A6C74 /* LICENSE in Resources */,
 				185BCE8D1F8F525E00D1BEBA /* Assets.xcassets in Resources */,
+				18A09C96206B81D0006134BF /* ios库.png in Resources */,
 				1806DC451FAB1D00007A6C74 /* README.md in Resources */,
 				185E29941FAB18D000CB8531 /* README.md in Resources */,
 				1806DC7C1FAB2039007A6C74 /* README.md in Resources */,
@@ -1067,6 +1138,7 @@
 				1806DC211FAB1CC9007A6C74 /* ZFTButton.m in Sources */,
 				1806DC221FAB1CC9007A6C74 /* ZFTLoadingView.m in Sources */,
 				1806DC1F1FAB1C9E007A6C74 /* ZFTPlayerOption.m in Sources */,
+				182A4AD5206A4FA300EAC437 /* MyAssertHandler.m in Sources */,
 				186A11F32068EC55000C5B3C /* DictModel.m in Sources */,
 				1806DC4D1FAB1D00007A6C74 /* SDWebImagePrefetcher.m in Sources */,
 				1806DC201FAB1C9E007A6C74 /* ZFTPlayerView.m in Sources */,
@@ -1081,6 +1153,7 @@
 				185F8666206390B900782D2A /* UIViewFrame.m in Sources */,
 				185F2B9E1FBBEB3A0024D8A6 /* BlockTestVC.m in Sources */,
 				186A11E72068D440000C5B3C /* KvokvcVC.m in Sources */,
+				18A09C91206B78EB006134BF /* StaticLibraryVC.m in Sources */,
 				1864A1A11FBD20EA0035CC8F /* ViewControllerI.m in Sources */,
 				18AF92262003792800BA61B0 /* NavViewController.m in Sources */,
 				1806DC491FAB1D00007A6C74 /* SDWebImageDecoder.m in Sources */,
@@ -1110,6 +1183,7 @@
 				186A11ED2068DE47000C5B3C /* Master.m in Sources */,
 				1806DC721FAB2039007A6C74 /* MASCompositeConstraint.m in Sources */,
 				18548765200F336600BAD94E /* AppPushViewController.m in Sources */,
+				182A4AD2206A4C8B00EAC437 /* AssertVC.m in Sources */,
 				1806DC781FAB2039007A6C74 /* NSArray+MASAdditions.m in Sources */,
 				185F866220634F5F00782D2A /* PropertyVC.m in Sources */,
 				185E29971FAB18D000CB8531 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1305,6 +1379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBANL9BE6T;
 				ENABLE_BITCODE = NO;
@@ -1319,10 +1394,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/learningTest/ijkplayer/Class/IJKFFMoviePlayerController/ffmpeg/lib",
+					"$(PROJECT_DIR)/learningTest/静态库制作/BaseCell",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sss.learningTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -1332,6 +1410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBANL9BE6T;
 				ENABLE_BITCODE = NO;
@@ -1346,10 +1425,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/learningTest/ijkplayer/Class/IJKFFMoviePlayerController/ffmpeg/lib",
+					"$(PROJECT_DIR)/learningTest/静态库制作/BaseCell",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sss.learningTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
