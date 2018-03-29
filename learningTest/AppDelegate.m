@@ -41,12 +41,43 @@
 
 @synthesize netWorkStatesCode;
 
+
+
+/**
+ 统一捕获异常
+ 
+ @param exception 异常信息
+ */
+void gloablException(NSException * exception) {
+    
+#ifdef DEBUG
+    // 异常信息打印
+    NSLog(@"异常信息:\n%@", exception);
+    NSLog(@"异常堆栈信息:\n %@", [exception callStackSymbols]);
+    
+#else
+    
+    // TODO: 可以直接将 exception 中的所有信息发到服务器.
+    
+#endif
+    
+    // 重启
+    [[NSRunLoop currentRunLoop]addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop]run];
+    
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 //    GetTextHeight *vc = [GetTextHeight new];
 //    DataVC *vc = [DataVC new];
 //    TestVC *vc = [TestVC new];
 //    GCDVC *vc = [GCDVC new];
+    
+    
+    // 捕获所有异常
+    NSSetUncaughtExceptionHandler(gloablException);
+    
+    
     StaticLibraryVC *vc = [StaticLibraryVC new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;

@@ -24,7 +24,7 @@
     [BaseCell log];
      [FrameLog log];
 //    [Coding coding];
-    
+     
 }
 /**
 1.new project
