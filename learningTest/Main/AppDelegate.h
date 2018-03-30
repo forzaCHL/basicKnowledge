@@ -36,5 +36,7 @@
  */
 @property(nonatomic,assign)int netWorkStatesCode;
 
+
++(AppDelegate *)shareInstance;
 @end
 

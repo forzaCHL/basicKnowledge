@@ -7,23 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "GetTextHeight.h"
-#import "GCDVC.h"
-#import "TestVC.h"
-#import "BlockTestVC.h"
-#import "NavViewController.h"
-#import "HTTPRequestVC.h"
-#import <AVFoundation/AVFoundation.h>
-#import "AFNetworking.h"
-#import "AppPushViewController.h"
-#import "AFNetworkActivityIndicatorManager.h"
-#import "UIViewFrame.h"
-#import "SortVC.h"
-#import <objc/runtime.h>
-#import "KvokvcVC.h"
-#import "RuntimeVC.h"
-#import "StaticLibraryVC.h"
-#import "LYTabBarController.h"
+
 @interface AppDelegate ()
 
 @property(nonatomic,assign) BOOL shouldStopBg;
@@ -64,6 +48,10 @@ void gloablException(NSException * exception) {
     [[NSRunLoop currentRunLoop]addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
     [[NSRunLoop currentRunLoop]run];
     
+}
+#pragma mark - 获取appDelegate
++(AppDelegate *)shareInstance{
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 

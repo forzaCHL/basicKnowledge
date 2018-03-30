@@ -28,12 +28,13 @@
     //去掉上部的黑色线条，
     //如果加上黑色线条的话可以这样。view自定义高度为1，宽度为tabBar的宽度 [tabbarController.tabBar addSubview:view];
     [[UITabBar appearance] setBackgroundImage:[UIImage imageWithLYColor:[UIColor clearColor]]];
+    
     [[UITabBar appearance] setShadowImage:[UIImage new]];
     UIView *topLineView = [[UIView alloc] init];
     topLineView.frame = CGRectMake(0, 0, CGRectGetWidth(self.tabBar.bounds), 1);
     topLineView.backgroundColor = [UIColor colorWithWhite:0.966 alpha:1.000];
     [self.tabBar addSubview:topLineView];
-    
+    self.tabBar.translucent = NO;//不透明
 }
 - (void)setupViewControllers{
     
