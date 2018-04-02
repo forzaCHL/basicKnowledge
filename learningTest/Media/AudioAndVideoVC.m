@@ -7,7 +7,7 @@
 //
 
 #import "AudioAndVideoVC.h"
-
+#import "PlayerViewController.h"
 
 @interface AudioAndVideoVC ()
 
@@ -52,11 +52,16 @@
 }
 -(void)playerBtnClick1
 {
-   
+    PlayerViewController *playervc =[[PlayerViewController alloc]init];
+    playervc.playUrl = @"http://fastwebcache.yod.cn/yanglan/2013suoluosi/2013suoluosi_850/2013suoluosi_850.m3u8";
+    playervc.videoName = @"杨澜采访索罗斯";
+    [self.navigationController pushViewController:playervc animated:NO];
 }
 -(void)playerBtnClick2
 {
-    
+    PlayerViewController *playervc =[[PlayerViewController alloc]init];
+    playervc.playUrl = @"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
+    [self.navigationController pushViewController:playervc animated:NO];
 }
 
 @end

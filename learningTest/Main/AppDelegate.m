@@ -62,7 +62,7 @@ void gloablException(NSException * exception) {
     
     
     // 捕获所有异常
-    NSSetUncaughtExceptionHandler(gloablException);
+//    NSSetUncaughtExceptionHandler(gloablException);
     self.window.rootViewController = [[LYTabBarController alloc] init];
     
     [self netWorkChangeEvent];
@@ -70,6 +70,7 @@ void gloablException(NSException * exception) {
     [self setUpMusicOptionsWithNormal:YES];
     return YES;
 }
+
 #pragma mark - 检测网络状态变化
 -(void)netWorkChangeEvent
 {

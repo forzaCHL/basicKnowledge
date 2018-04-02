@@ -46,10 +46,19 @@
 		185E299B1FAB18D000CB8531 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E29881FAB18CF00CB8531 /* UIProgressView+AFNetworking.m */; };
 		185E299C1FAB18D000CB8531 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E298A1FAB18CF00CB8531 /* UIRefreshControl+AFNetworking.m */; };
 		185E299D1FAB18D000CB8531 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E298C1FAB18CF00CB8531 /* UIWebView+AFNetworking.m */; };
+		187468B42071BFF300C557E2 /* MBProgressHUD+mutiLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 187468B32071BFF300C557E2 /* MBProgressHUD+mutiLine.m */; };
 		1878B2071FAC4310004746EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2061FAC4310004746EA /* libc++.tbd */; };
 		1878B2131FAC4A04004746EA /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2121FAC4A03004746EA /* libc.tbd */; };
 		18799EC6206DCEB700976EF1 /* UIShowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18799EC5206DCEB700976EF1 /* UIShowTool.m */; };
 		18799EC9206DD5DE00976EF1 /* GlobalString.m in Sources */ = {isa = PBXBuildFile; fileRef = 18799EC7206DD5DE00976EF1 /* GlobalString.m */; };
+		18A09473206E121F00EA940E /* 60秒静音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18A09467206E121F00EA940E /* 60秒静音.mp3 */; };
+		18A09474206E121F00EA940E /* Resource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A09468206E121F00EA940E /* Resource.xcassets */; };
+		18A09475206E121F00EA940E /* ZFTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0946A206E121F00EA940E /* ZFTButton.m */; };
+		18A09476206E121F00EA940E /* ZFTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0946C206E121F00EA940E /* ZFTLoadingView.m */; };
+		18A09477206E121F00EA940E /* ZFTNetNotiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0946E206E121F00EA940E /* ZFTNetNotiView.m */; };
+		18A09478206E121F00EA940E /* ZFTPlayerOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A09470206E121F00EA940E /* ZFTPlayerOption.m */; };
+		18A09479206E121F00EA940E /* ZFTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A09472206E121F00EA940E /* ZFTPlayerView.m */; };
+		18A0947C206E132700EA940E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0947B206E132600EA940E /* PlayerViewController.m */; };
 		18F04B70206CE3D600EC310A /* new_tab_ask_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F04B53206CE3D500EC310A /* new_tab_ask_home@2x.png */; };
 		18F04B71206CE3D600EC310A /* new_tab_ask_home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F04B54206CE3D500EC310A /* new_tab_ask_home@3x.png */; };
 		18F04B72206CE3D600EC310A /* new_tab_ask_home_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F04B55206CE3D500EC310A /* new_tab_ask_home_n@2x.png */; };
@@ -209,6 +218,8 @@
 		185E298A1FAB18CF00CB8531 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		185E298B1FAB18CF00CB8531 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		185E298C1FAB18CF00CB8531 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		187468B22071BFF300C557E2 /* MBProgressHUD+mutiLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+mutiLine.h"; path = "../../../../../zxy-ios-client-New/CloudStudy/GlobalFile/Tools/MBProgressHUD+mutiLine.h"; sourceTree = "<group>"; };
+		187468B32071BFF300C557E2 /* MBProgressHUD+mutiLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+mutiLine.m"; path = "../../../../../zxy-ios-client-New/CloudStudy/GlobalFile/Tools/MBProgressHUD+mutiLine.m"; sourceTree = "<group>"; };
 		1878B2041FAC42B6004746EA /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		1878B2061FAC4310004746EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		1878B2121FAC4A03004746EA /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
@@ -218,6 +229,20 @@
 		18799EC5206DCEB700976EF1 /* UIShowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIShowTool.m; sourceTree = "<group>"; };
 		18799EC7206DD5DE00976EF1 /* GlobalString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalString.m; sourceTree = "<group>"; };
 		18799EC8206DD5DE00976EF1 /* GlobalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalString.h; sourceTree = "<group>"; };
+		18A09467206E121F00EA940E /* 60秒静音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "60秒静音.mp3"; sourceTree = "<group>"; };
+		18A09468206E121F00EA940E /* Resource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resource.xcassets; sourceTree = "<group>"; };
+		18A09469206E121F00EA940E /* ZFTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTButton.h; sourceTree = "<group>"; };
+		18A0946A206E121F00EA940E /* ZFTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTButton.m; sourceTree = "<group>"; };
+		18A0946B206E121F00EA940E /* ZFTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTLoadingView.h; sourceTree = "<group>"; };
+		18A0946C206E121F00EA940E /* ZFTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTLoadingView.m; sourceTree = "<group>"; };
+		18A0946D206E121F00EA940E /* ZFTNetNotiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTNetNotiView.h; sourceTree = "<group>"; };
+		18A0946E206E121F00EA940E /* ZFTNetNotiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTNetNotiView.m; sourceTree = "<group>"; };
+		18A0946F206E121F00EA940E /* ZFTPlayerOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTPlayerOption.h; sourceTree = "<group>"; };
+		18A09470206E121F00EA940E /* ZFTPlayerOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTPlayerOption.m; sourceTree = "<group>"; };
+		18A09471206E121F00EA940E /* ZFTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTPlayerView.h; sourceTree = "<group>"; };
+		18A09472206E121F00EA940E /* ZFTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTPlayerView.m; sourceTree = "<group>"; };
+		18A0947A206E132600EA940E /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		18A0947B206E132600EA940E /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		18F04B53206CE3D500EC310A /* new_tab_ask_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_tab_ask_home@2x.png"; sourceTree = "<group>"; };
 		18F04B54206CE3D500EC310A /* new_tab_ask_home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_tab_ask_home@3x.png"; sourceTree = "<group>"; };
 		18F04B55206CE3D500EC310A /* new_tab_ask_home_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_tab_ask_home_n@2x.png"; sourceTree = "<group>"; };
@@ -523,10 +548,31 @@
 		18799EC3206DCEB700976EF1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				187468B22071BFF300C557E2 /* MBProgressHUD+mutiLine.h */,
+				187468B32071BFF300C557E2 /* MBProgressHUD+mutiLine.m */,
 				18799EC4206DCEB700976EF1 /* UIShowTool.h */,
 				18799EC5206DCEB700976EF1 /* UIShowTool.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		18A09466206E121F00EA940E /* ZFTPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				18A09467206E121F00EA940E /* 60秒静音.mp3 */,
+				18A09468206E121F00EA940E /* Resource.xcassets */,
+				18A09469206E121F00EA940E /* ZFTButton.h */,
+				18A0946A206E121F00EA940E /* ZFTButton.m */,
+				18A0946B206E121F00EA940E /* ZFTLoadingView.h */,
+				18A0946C206E121F00EA940E /* ZFTLoadingView.m */,
+				18A0946D206E121F00EA940E /* ZFTNetNotiView.h */,
+				18A0946E206E121F00EA940E /* ZFTNetNotiView.m */,
+				18A0946F206E121F00EA940E /* ZFTPlayerOption.h */,
+				18A09470206E121F00EA940E /* ZFTPlayerOption.m */,
+				18A09471206E121F00EA940E /* ZFTPlayerView.h */,
+				18A09472206E121F00EA940E /* ZFTPlayerView.m */,
+			);
+			path = ZFTPlayer;
 			sourceTree = "<group>";
 		};
 		18F04B52206CE3D500EC310A /* AppResourse */ = {
@@ -582,8 +628,11 @@
 		18F04BA2206CF19100EC310A /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				18A09466206E121F00EA940E /* ZFTPlayer */,
 				18F04BA3206CF19100EC310A /* AudioAndVideoVC.h */,
 				18F04BA4206CF19100EC310A /* AudioAndVideoVC.m */,
+				18A0947A206E132600EA940E /* PlayerViewController.h */,
+				18A0947B206E132600EA940E /* PlayerViewController.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -1006,6 +1055,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F04B95206CEB5B00EC310A /* home_normal@2x.png in Resources */,
+				18A09473206E121F00EA940E /* 60秒静音.mp3 in Resources */,
 				18F04B94206CEB5B00EC310A /* account_normal@2x.png in Resources */,
 				18F04B74206CE3D600EC310A /* new_tab_course@2x.png in Resources */,
 				185BCE901F8F525E00D1BEBA /* LaunchScreen.storyboard in Resources */,
@@ -1025,6 +1075,7 @@
 				18F04B79206CE3D600EC310A /* new_tab_home@3x.png in Resources */,
 				18F04B7B206CE3D600EC310A /* new_tab_home_n@3x.png in Resources */,
 				18F04B71206CE3D600EC310A /* new_tab_ask_home@3x.png in Resources */,
+				18A09474206E121F00EA940E /* Resource.xcassets in Resources */,
 				18F04B93206CEB5B00EC310A /* message_highlight@2x.png in Resources */,
 				18F04B98206CEB5B00EC310A /* account_highlight@2x.png in Resources */,
 				18F04B7A206CE3D600EC310A /* new_tab_home_n@2x.png in Resources */,
@@ -1134,6 +1185,7 @@
 				185E29951FAB18D000CB8531 /* AFAutoPurgingImageCache.m in Sources */,
 				18F04B84206CE3D600EC310A /* OtherVC.m in Sources */,
 				18F04D32206CF23500EC310A /* BlockTestVC.m in Sources */,
+				18A09476206E121F00EA940E /* ZFTLoadingView.m in Sources */,
 				18F04D6C206CF2DC00EC310A /* Helper.m in Sources */,
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
@@ -1148,18 +1200,21 @@
 				18F04D4F206CF2A500EC310A /* AppPushViewController.m in Sources */,
 				18799EC9206DD5DE00976EF1 /* GlobalString.m in Sources */,
 				185E29901FAB18D000CB8531 /* AFURLRequestSerialization.m in Sources */,
+				18A0947C206E132700EA940E /* PlayerViewController.m in Sources */,
 				18799EC6206DCEB700976EF1 /* UIShowTool.m in Sources */,
 				18F04D3D206CF23500EC310A /* NavViewController.m in Sources */,
 				18F04D62206CF2BE00EC310A /* Book.m in Sources */,
 				18F04D42206CF23500EC310A /* MyAssertHandler.m in Sources */,
 				18F04D3E206CF23500EC310A /* PropertyVC.m in Sources */,
 				185E298D1FAB18D000CB8531 /* AFHTTPSessionManager.m in Sources */,
+				187468B42071BFF300C557E2 /* MBProgressHUD+mutiLine.m in Sources */,
 				185E29921FAB18D000CB8531 /* AFURLSessionManager.m in Sources */,
 				185E29961FAB18D000CB8531 /* AFImageDownloader.m in Sources */,
 				18F04D60206CF2BE00EC310A /* HTTPRequestVC.m in Sources */,
 				185BCE931F8F525E00D1BEBA /* main.m in Sources */,
 				185E298F1FAB18D000CB8531 /* AFSecurityPolicy.m in Sources */,
 				185BCE8B1F8F525E00D1BEBA /* learningTest.xcdatamodeld in Sources */,
+				18A09477206E121F00EA940E /* ZFTNetNotiView.m in Sources */,
 				18F04D66206CF2BE00EC310A /* Master.m in Sources */,
 				18F04D35206CF23500EC310A /* GCDVC.m in Sources */,
 				18F04D65206CF2BE00EC310A /* KvokvcVC.m in Sources */,
@@ -1170,6 +1225,9 @@
 				18F04D3B206CF23500EC310A /* TestClass.m in Sources */,
 				18F04D37206CF23500EC310A /* RuntimeKit.m in Sources */,
 				185E298E1FAB18D000CB8531 /* AFNetworkReachabilityManager.m in Sources */,
+				18A09475206E121F00EA940E /* ZFTButton.m in Sources */,
+				18A09478206E121F00EA940E /* ZFTPlayerOption.m in Sources */,
+				18A09479206E121F00EA940E /* ZFTPlayerView.m in Sources */,
 				18F04D41206CF23500EC310A /* AssertVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

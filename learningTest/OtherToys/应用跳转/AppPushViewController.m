@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"应用跳转";
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
     but.frame = CGRectMake(20, 100, 80, 40);
     [but setTitle:@"跳转APP" forState: UIControlStateNormal];
@@ -59,7 +60,7 @@
             // Fallback on earlier versions
         }
     } else {
-        NSLog(@"没有安装");
+        [UIShowTool showNormalyTextViewInWindowAndtext:@"没有安装对应APP"];
     }
 }
 #pragma mark ----------- 跳转苹果商店
