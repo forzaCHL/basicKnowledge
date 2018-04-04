@@ -7,8 +7,14 @@
 //
 
 #import "WIFIBlueToothVC.h"
+#import "GCDAsyncSocket.h"
+#import "GCDAsyncSocketManager.h"
 
+static NSString *host = @"192.168.0.2";
+static int port = 8888;
 @interface WIFIBlueToothVC ()
+
+@property(nonatomic,strong)GCDAsyncSocketManager *socketManger;
 
 @end
 
@@ -18,12 +24,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Interesting";
-    
+    [self setUpSocket];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
+#pragma mark ----------- Socket{
+-(void)setUpSocket{
+    self.socketManger = [GCDAsyncSocketManager sharedInstance];
+    [self.socketManger changeHost:host port:port];
+    [self.socketManger connectSocketWithDelegate:self];
 }
-
 @end
