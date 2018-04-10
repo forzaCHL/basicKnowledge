@@ -53,6 +53,7 @@
 		1878B2071FAC4310004746EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2061FAC4310004746EA /* libc++.tbd */; };
 		1878B2131FAC4A04004746EA /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2121FAC4A03004746EA /* libc.tbd */; };
 		18799EC9206DD5DE00976EF1 /* GlobalString.m in Sources */ = {isa = PBXBuildFile; fileRef = 18799EC7206DD5DE00976EF1 /* GlobalString.m */; };
+		187A71C6207C4CA800B67F43 /* delayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A71C5207C4CA800B67F43 /* delayVC.m */; };
 		18A09473206E121F00EA940E /* 60秒静音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18A09467206E121F00EA940E /* 60秒静音.mp3 */; };
 		18A09474206E121F00EA940E /* Resource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A09468206E121F00EA940E /* Resource.xcassets */; };
 		18A09475206E121F00EA940E /* ZFTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0946A206E121F00EA940E /* ZFTButton.m */; };
@@ -241,6 +242,8 @@
 		18799EC2206DC71B00976EF1 /* General.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = General.h; sourceTree = "<group>"; };
 		18799EC7206DD5DE00976EF1 /* GlobalString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalString.m; sourceTree = "<group>"; };
 		18799EC8206DD5DE00976EF1 /* GlobalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalString.h; sourceTree = "<group>"; };
+		187A71C4207C4CA800B67F43 /* delayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delayVC.h; sourceTree = "<group>"; };
+		187A71C5207C4CA800B67F43 /* delayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = delayVC.m; sourceTree = "<group>"; };
 		18A09467206E121F00EA940E /* 60秒静音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "60秒静音.mp3"; sourceTree = "<group>"; };
 		18A09468206E121F00EA940E /* Resource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resource.xcassets; sourceTree = "<group>"; };
 		18A09469206E121F00EA940E /* ZFTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTButton.h; sourceTree = "<group>"; };
@@ -603,6 +606,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		187A71C3207C4C9300B67F43 /* 定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				187A71C4207C4CA800B67F43 /* delayVC.h */,
+				187A71C5207C4CA800B67F43 /* delayVC.m */,
+			);
+			path = "定时器";
+			sourceTree = "<group>";
+		};
 		18A09466206E121F00EA940E /* ZFTPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +728,7 @@
 			children = (
 				18F04B68206CE3D600EC310A /* BasicVC.h */,
 				18F04B69206CE3D600EC310A /* BasicVC.m */,
+				187A71C3207C4C9300B67F43 /* 定时器 */,
 				18F04D67206CF2DC00EC310A /* 正则表达式判断 */,
 				18F04D50206CF2BD00EC310A /* HTTP请求 */,
 				18F04CF4206CF23500EC310A /* Block */,
@@ -1275,6 +1288,7 @@
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
 				18F04D61206CF2BE00EC310A /* Author.m in Sources */,
+				187A71C6207C4CA800B67F43 /* delayVC.m in Sources */,
 				185E29971FAB18D000CB8531 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				18F04BA1206CEB9E00EC310A /* UIImage+LYColor.m in Sources */,
 				18F04D64206CF2BE00EC310A /* Dog.m in Sources */,

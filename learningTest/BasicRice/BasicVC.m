@@ -7,6 +7,7 @@
 //
 
 #import "BasicVC.h"
+#import "delayVC.h"
 
 @interface BasicVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -21,7 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Basic things";
     self.navigationController.navigationBar.translucent = YES;
-    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用", nil];
+    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务", nil];
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -91,6 +92,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"静态库制作与使用"]){
         StaticLibraryVC *vc = [StaticLibraryVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"定时任务"]){
+        delayVC *vc = [delayVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -37,10 +37,21 @@
     NSLog(@"Decrypted with private key: %@", decWithPrivKey);
 }
 -(void)AES{
+//    对称加密    加密（encryption）与解密（decryption）使用的是同样的密钥（secret key） AES/DES
+//    非对称加密  非对称加密算法需要两个密钥来进行加密和解密，这两个秘钥公钥私钥  RSA
+    
+    
+    
     NSString *testString = @"hello world";
     NSString *codeStrings = [testString edc_encryptWithAESwithKey:@"gddjpt_publicaes"];
     NSString *codeStringsss = [codeStrings edc_decryptWithAESwithKey:@"gddjpt_publicaes"];
     NSLog(@"testString->%@..codeStrings->%@..codeStringsss->%@",testString,codeStrings,codeStringsss);
+    
+    
+//    NSString *codeStr = @"dgJ+A61ouAhWMVZkv3m31J4xgj3Z/QJ+DFE90vz+1V8ZfhetJR8YmZc7TXvqC9/dJv+6kOmluU9OB+4c+ryLSOFfY9qarNgorQSZ69jPsPnyfjvBlSSEcJrmizqIU+HwdvECSJnSmLqcWnIPOOTL9g==";
+//     NSString *codeStringssssss = [codeStr edc_decryptWithAESwithKey:@"gddjpt_publicaes"];
+    
+    
 }
 
 @end
