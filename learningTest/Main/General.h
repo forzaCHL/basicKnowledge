@@ -22,4 +22,9 @@
 
 #define appDelegate     ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+#define PublicTitleFont    (iPhone6plus_6Splus || iPhone6_6S || iPhone6plusZoomMode) ? [UIFont fontWithName:@"Telugu Sangam MN" size:17.f] : [UIFont fontWithName:@"Telugu Sangam MN" size:14.f]
+
+
+
+
 #endif /* General_h */
