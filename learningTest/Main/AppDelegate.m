@@ -60,7 +60,6 @@ void gloablException(NSException * exception) {
 //    TestVC *vc = [TestVC new];
 //    GCDVC *vc = [GCDVC new];
     
-    
     // 捕获所有异常
 //    NSSetUncaughtExceptionHandler(gloablException);
     self.window.rootViewController = [[LYTabBarController alloc] init];

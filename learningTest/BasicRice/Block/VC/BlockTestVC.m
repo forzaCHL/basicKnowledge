@@ -21,6 +21,8 @@
 //    [self norMalBlock];
 //    [self useWithTypedef];
     [self creatButton];
+    
+    
 }
 -(void)creatButton{
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -30,11 +32,16 @@
     [self.view addSubview:but];
 }
 -(void)pushVC{
+    
     ViewControllerI *vc = [ViewControllerI new];
     [self.navigationController pushViewController:vc animated:YES];
     vc.strBlock = ^(NSString *str) {
         NSLog(@"str -->%@",str);
     };
+    vc.BlockII = ^(NSString *str) {
+        NSLog(@"blockII");
+    };
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -25,6 +25,7 @@
 #define PublicTitleFont    (iPhone6plus_6Splus || iPhone6_6S || iPhone6plusZoomMode) ? [UIFont fontWithName:@"Telugu Sangam MN" size:17.f] : [UIFont fontWithName:@"Telugu Sangam MN" size:14.f]
 
 
+#define SharedNotification            [NSNotificationCenter defaultCenter]
 
 
 #endif /* General_h */

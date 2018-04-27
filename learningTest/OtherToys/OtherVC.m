@@ -9,7 +9,7 @@
 #import "OtherVC.h"
 #import "RSAViewController.h"
 #import "MyCollectionViewCell.h"
-
+#import "BannerViewController.h"
 @interface OtherVC ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *mainCollectionView;
@@ -76,6 +76,9 @@
                 break;
             case 1:
                 cell.botlabel.text = @"RSA&AES";
+                break;
+            case 2:
+                cell.botlabel.text = @"BannerView";
                 break;
             default:
                 break;
@@ -172,6 +175,12 @@
             case 1:
             {
                 RSAViewController *vc =[RSAViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 2:
+            {
+                BannerViewController *vc =[BannerViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
                 break;

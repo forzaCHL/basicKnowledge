@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self testGCDGroup3];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:)name:@"tongzhi" object:nil];
+}
+- (void)tongzhi:(NSNotification *)text{
+    
+    NSLog(@"%@",text.userInfo[@"textOne"]);
+    
+    NSLog(@"－－－－－接收到通知------");
+    
 }
 #pragma mark ----------- 并发队列
 #pragma mark ----------- 每次想执行10个任务。休息两秒。继续执行10个任务。可以这么写.

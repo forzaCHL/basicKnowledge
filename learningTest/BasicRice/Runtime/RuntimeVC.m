@@ -29,13 +29,13 @@
 #pragma mark ----------- 输出类名
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSString *className = NSStringFromClass([self class]);
-    NSLog(@"%@ will appear", className);
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
+    NSString *className = NSStringFromClass([self class]);
+    NSLog(@"%@ will appear", className);
 //    [self performSelector];
 //    [self addProperty];
     

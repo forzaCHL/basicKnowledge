@@ -24,7 +24,10 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if (self.strBlock) {
-        self.strBlock(@"return me");
+        self.strBlock(self.myText.text);
+    }
+    if (self.BlockII) {
+        self.BlockII(self.myText.text);
     }
 }
 -(void)setTextView{

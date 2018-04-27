@@ -11,10 +11,8 @@
 		181D4EAB207385BC0003274A /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EA6207385BC0003274A /* NSString+AES.m */; };
 		181D4EAC207385BC0003274A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EAA207385BC0003274A /* GTMBase64.m */; };
 		182A4ABC2069D28B00EAC437 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2041FAC42B6004746EA /* IJKMediaFramework.framework */; };
-		183DA52520734EC4003E7E8C /* RSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DA52420734EC4003E7E8C /* RSAViewController.m */; };
 		18540A21206C7D2B0084CE29 /* NewFrameTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18540A20206C7D2A0084CE29 /* NewFrameTest.framework */; };
 		18540A22206C7D2B0084CE29 /* NewFrameTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18540A20206C7D2A0084CE29 /* NewFrameTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1858FFA0207F52C300F06B0C /* ZXYBaseSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858FF9E207F52C300F06B0C /* ZXYBaseSegmentControl.m */; };
 		185BCE881F8F525E00D1BEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185BCE861F8F525E00D1BEBA /* Main.storyboard */; };
 		185BCE8B1F8F525E00D1BEBA /* learningTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185BCE891F8F525E00D1BEBA /* learningTest.xcdatamodeld */; };
 		185BCE8D1F8F525E00D1BEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185BCE8C1F8F525E00D1BEBA /* Assets.xcassets */; };
@@ -51,6 +49,16 @@
 		185E299B1FAB18D000CB8531 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E29881FAB18CF00CB8531 /* UIProgressView+AFNetworking.m */; };
 		185E299C1FAB18D000CB8531 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E298A1FAB18CF00CB8531 /* UIRefreshControl+AFNetworking.m */; };
 		185E299D1FAB18D000CB8531 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E298C1FAB18CF00CB8531 /* UIWebView+AFNetworking.m */; };
+		1872404A208045E900D7F0E0 /* ZXYBaseSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18724048208045E900D7F0E0 /* ZXYBaseSegmentControl.m */; };
+		1872404F2080902400D7F0E0 /* RSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872404D2080902400D7F0E0 /* RSAViewController.m */; };
+		187240522080904000D7F0E0 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187240512080904000D7F0E0 /* BannerView.m */; };
+		187240552080953A00D7F0E0 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187240542080953A00D7F0E0 /* BannerViewController.m */; };
+		187240592080965A00D7F0E0 /* tu3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187240562080965900D7F0E0 /* tu3@2x.png */; };
+		1872405A2080965A00D7F0E0 /* tu2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187240572080965900D7F0E0 /* tu2@2x.png */; };
+		1872405B2080965A00D7F0E0 /* tu1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187240582080965900D7F0E0 /* tu1@2x.png */; };
+		1872405D208096DB00D7F0E0 /* u29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872405C208096DB00D7F0E0 /* u29.png */; };
+		1872405F208096E700D7F0E0 /* u35.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872405E208096E700D7F0E0 /* u35.png */; };
+		18724061208096F000D7F0E0 /* u51.png in Resources */ = {isa = PBXBuildFile; fileRef = 18724060208096F000D7F0E0 /* u51.png */; };
 		1878B2071FAC4310004746EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2061FAC4310004746EA /* libc++.tbd */; };
 		1878B2131FAC4A04004746EA /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2121FAC4A03004746EA /* libc.tbd */; };
 		18799EC9206DD5DE00976EF1 /* GlobalString.m in Sources */ = {isa = PBXBuildFile; fileRef = 18799EC7206DD5DE00976EF1 /* GlobalString.m */; };
@@ -173,11 +181,7 @@
 		181D4EA8207385BC0003274A /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		181D4EA9207385BC0003274A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		181D4EAA207385BC0003274A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		183DA52320734EC4003E7E8C /* RSAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAViewController.h; sourceTree = "<group>"; };
-		183DA52420734EC4003E7E8C /* RSAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAViewController.m; sourceTree = "<group>"; };
 		18540A20206C7D2A0084CE29 /* NewFrameTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewFrameTest.framework; sourceTree = "<group>"; };
-		1858FF9E207F52C300F06B0C /* ZXYBaseSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYBaseSegmentControl.m; sourceTree = "<group>"; };
-		1858FF9F207F52C300F06B0C /* ZXYBaseSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYBaseSegmentControl.h; sourceTree = "<group>"; };
 		185BCE7D1F8F525E00D1BEBA /* learningTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185BCE871F8F525E00D1BEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185BCE8A1F8F525E00D1BEBA /* learningTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = learningTest.xcdatamodel; sourceTree = "<group>"; };
@@ -238,6 +242,20 @@
 		185E298A1FAB18CF00CB8531 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		185E298B1FAB18CF00CB8531 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		185E298C1FAB18CF00CB8531 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		18724048208045E900D7F0E0 /* ZXYBaseSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYBaseSegmentControl.m; sourceTree = "<group>"; };
+		18724049208045E900D7F0E0 /* ZXYBaseSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYBaseSegmentControl.h; sourceTree = "<group>"; };
+		1872404D2080902400D7F0E0 /* RSAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAViewController.m; sourceTree = "<group>"; };
+		1872404E2080902400D7F0E0 /* RSAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAViewController.h; sourceTree = "<group>"; };
+		187240502080904000D7F0E0 /* BannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
+		187240512080904000D7F0E0 /* BannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
+		187240532080953A00D7F0E0 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		187240542080953A00D7F0E0 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		187240562080965900D7F0E0 /* tu3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu3@2x.png"; sourceTree = "<group>"; };
+		187240572080965900D7F0E0 /* tu2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu2@2x.png"; sourceTree = "<group>"; };
+		187240582080965900D7F0E0 /* tu1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu1@2x.png"; sourceTree = "<group>"; };
+		1872405C208096DB00D7F0E0 /* u29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u29.png; sourceTree = "<group>"; };
+		1872405E208096E700D7F0E0 /* u35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u35.png; sourceTree = "<group>"; };
+		18724060208096F000D7F0E0 /* u51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u51.png; sourceTree = "<group>"; };
 		1878B2041FAC42B6004746EA /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		1878B2061FAC4310004746EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		1878B2121FAC4A03004746EA /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
@@ -597,11 +615,39 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		18724047208045E900D7F0E0 /* ZXYBaseSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				18724048208045E900D7F0E0 /* ZXYBaseSegmentControl.m */,
+				18724049208045E900D7F0E0 /* ZXYBaseSegmentControl.h */,
+			);
+			path = ZXYBaseSegmentControl;
+			sourceTree = "<group>";
+		};
+		1872404B2080902400D7F0E0 /* BannerView */ = {
+			isa = PBXGroup;
+			children = (
+				187240502080904000D7F0E0 /* BannerView.h */,
+				187240512080904000D7F0E0 /* BannerView.m */,
+				187240532080953A00D7F0E0 /* BannerViewController.h */,
+				187240542080953A00D7F0E0 /* BannerViewController.m */,
+			);
+			path = BannerView;
+			sourceTree = "<group>";
+		};
+		1872404C2080902400D7F0E0 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				1872404D2080902400D7F0E0 /* RSAViewController.m */,
+				1872404E2080902400D7F0E0 /* RSAViewController.h */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
 		18799EC3206DCEB700976EF1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				1858FF9F207F52C300F06B0C /* ZXYBaseSegmentControl.h */,
-				1858FF9E207F52C300F06B0C /* ZXYBaseSegmentControl.m */,
+				18724047208045E900D7F0E0 /* ZXYBaseSegmentControl */,
 				18CE5D722074738B009BED20 /* GCDAsyncSocketManager.h */,
 				18CE5D732074738B009BED20 /* GCDAsyncSocketManager.m */,
 				18CE5D6120746412009BED20 /* UIShowTool */,
@@ -669,6 +715,12 @@
 		18F04B52206CE3D500EC310A /* AppResourse */ = {
 			isa = PBXGroup;
 			children = (
+				18724060208096F000D7F0E0 /* u51.png */,
+				1872405E208096E700D7F0E0 /* u35.png */,
+				1872405C208096DB00D7F0E0 /* u29.png */,
+				187240582080965900D7F0E0 /* tu1@2x.png */,
+				187240572080965900D7F0E0 /* tu2@2x.png */,
+				187240562080965900D7F0E0 /* tu3@2x.png */,
 				18F04B90206CEB5B00EC310A /* account_highlight@2x.png */,
 				18F04B8C206CEB5A00EC310A /* account_normal@2x.png */,
 				18F04B8A206CEB5A00EC310A /* home_highlight@2x.png */,
@@ -952,10 +1004,10 @@
 		18F04D47206CF2A500EC310A /* OtherToys */ = {
 			isa = PBXGroup;
 			children = (
+				1872404B2080902400D7F0E0 /* BannerView */,
+				1872404C2080902400D7F0E0 /* RSA */,
 				18F04B6C206CE3D600EC310A /* OtherVC.h */,
 				18F04B6D206CE3D600EC310A /* OtherVC.m */,
-				183DA52320734EC4003E7E8C /* RSAViewController.h */,
-				183DA52420734EC4003E7E8C /* RSAViewController.m */,
 				18CE5D5A20745D4F009BED20 /* View */,
 				18F04D48206CF2A500EC310A /* JAVA */,
 				18F04D4B206CF2A500EC310A /* 应用跳转 */,
@@ -1113,6 +1165,9 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -1157,11 +1212,13 @@
 			files = (
 				18F04B95206CEB5B00EC310A /* home_normal@2x.png in Resources */,
 				18A09473206E121F00EA940E /* 60秒静音.mp3 in Resources */,
+				1872405A2080965A00D7F0E0 /* tu2@2x.png in Resources */,
 				18F04B94206CEB5B00EC310A /* account_normal@2x.png in Resources */,
 				18F04B74206CE3D600EC310A /* new_tab_course@2x.png in Resources */,
 				185BCE901F8F525E00D1BEBA /* LaunchScreen.storyboard in Resources */,
 				18F04B7E206CE3D600EC310A /* new_tab_my_n@2x.png in Resources */,
 				18F04B77206CE3D600EC310A /* new_tab_course_n@3x.png in Resources */,
+				1872405F208096E700D7F0E0 /* u35.png in Resources */,
 				185BCE8D1F8F525E00D1BEBA /* Assets.xcassets in Resources */,
 				18F04B78206CE3D600EC310A /* new_tab_home@2x.png in Resources */,
 				18F04B7F206CE3D600EC310A /* new_tab_my_n@3x.png in Resources */,
@@ -1172,9 +1229,13 @@
 				18F04B92206CEB5B00EC310A /* home_highlight@2x.png in Resources */,
 				18F04B73206CE3D600EC310A /* new_tab_ask_home_n@3x.png in Resources */,
 				18F04B75206CE3D600EC310A /* new_tab_course@3x.png in Resources */,
+				1872405D208096DB00D7F0E0 /* u29.png in Resources */,
 				18F04B91206CEB5B00EC310A /* mycity_highlight@2x.png in Resources */,
 				18F04B79206CE3D600EC310A /* new_tab_home@3x.png in Resources */,
+				187240592080965A00D7F0E0 /* tu3@2x.png in Resources */,
+				1872405B2080965A00D7F0E0 /* tu1@2x.png in Resources */,
 				18F04B7B206CE3D600EC310A /* new_tab_home_n@3x.png in Resources */,
+				18724061208096F000D7F0E0 /* u51.png in Resources */,
 				18F04B71206CE3D600EC310A /* new_tab_ask_home@3x.png in Resources */,
 				18A09474206E121F00EA940E /* Resource.xcassets in Resources */,
 				18F04B93206CEB5B00EC310A /* message_highlight@2x.png in Resources */,
@@ -1269,6 +1330,7 @@
 				18F04B80206CE3D600EC310A /* AppDelegate.m in Sources */,
 				18F04D63206CF2BE00EC310A /* DictModel.m in Sources */,
 				18F04D33206CF23500EC310A /* ViewControllerI.m in Sources */,
+				1872404F2080902400D7F0E0 /* RSAViewController.m in Sources */,
 				18F04D6D206CF2DC00EC310A /* TestVC.m in Sources */,
 				18F04B9E206CEB6800EC310A /* UIButton+LYButton.m in Sources */,
 				18F04D36206CF23500EC310A /* RuntimeVC.m in Sources */,
@@ -1292,6 +1354,7 @@
 				18F04D6C206CF2DC00EC310A /* Helper.m in Sources */,
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
+				187240522080904000D7F0E0 /* BannerView.m in Sources */,
 				18F04D61206CF2BE00EC310A /* Author.m in Sources */,
 				187A71C6207C4CA800B67F43 /* delayVC.m in Sources */,
 				185E29971FAB18D000CB8531 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1312,7 +1375,6 @@
 				18F04D42206CF23500EC310A /* MyAssertHandler.m in Sources */,
 				18F04D3E206CF23500EC310A /* PropertyVC.m in Sources */,
 				185E298D1FAB18D000CB8531 /* AFHTTPSessionManager.m in Sources */,
-				183DA52520734EC4003E7E8C /* RSAViewController.m in Sources */,
 				181D4EAB207385BC0003274A /* NSString+AES.m in Sources */,
 				185E29921FAB18D000CB8531 /* AFURLSessionManager.m in Sources */,
 				185E29961FAB18D000CB8531 /* AFImageDownloader.m in Sources */,
@@ -1325,14 +1387,15 @@
 				18F04D35206CF23500EC310A /* GCDVC.m in Sources */,
 				18F04D65206CF2BE00EC310A /* KvokvcVC.m in Sources */,
 				18CE5D60207462D8009BED20 /* RSA.m in Sources */,
+				187240552080953A00D7F0E0 /* BannerViewController.m in Sources */,
 				18F04C8A206CF19100EC310A /* AudioAndVideoVC.m in Sources */,
+				1872404A208045E900D7F0E0 /* ZXYBaseSegmentControl.m in Sources */,
 				18F04D34206CF23500EC310A /* UIViewFrame.m in Sources */,
 				18CE5D742074738B009BED20 /* GCDAsyncSocketManager.m in Sources */,
 				18F04D4E206CF2A500EC310A /* JAVAViewController.m in Sources */,
 				185E299D1FAB18D000CB8531 /* UIWebView+AFNetworking.m in Sources */,
 				18F04D3B206CF23500EC310A /* TestClass.m in Sources */,
 				18F04D37206CF23500EC310A /* RuntimeKit.m in Sources */,
-				1858FFA0207F52C300F06B0C /* ZXYBaseSegmentControl.m in Sources */,
 				185E298E1FAB18D000CB8531 /* AFNetworkReachabilityManager.m in Sources */,
 				18A09475206E121F00EA940E /* ZFTButton.m in Sources */,
 				18A09478206E121F00EA940E /* ZFTPlayerOption.m in Sources */,
