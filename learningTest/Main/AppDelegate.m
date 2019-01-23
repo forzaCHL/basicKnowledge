@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "ZYLauchMovieViewController.h"
+#import <LocalAuthentication/LocalAuthentication.h>//touchID
+
+
+#define kIsFirstLauchApp @"kIsFirstLauchApp"
 
 @interface AppDelegate ()
 
@@ -54,22 +59,32 @@ void gloablException(NSException * exception) {
     return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-//    GetTextHeight *vc = [GetTextHeight new];
-//    DataVC *vc = [DataVC new];
-//    TestVC *vc = [TestVC new];
-//    GCDVC *vc = [GCDVC new];
     
     // 捕获所有异常
 //    NSSetUncaughtExceptionHandler(gloablException);
-    self.window.rootViewController = [[LYTabBarController alloc] init];
     
+//    启动
+//    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    if ([self isFirstLauchApp]) {//如果是第一次登陆
+        ZYLauchMovieViewController *vc = [[ZYLauchMovieViewController alloc] init];
+        self.window.rootViewController = vc;
+        [self setIsFirstLauchApp:NO];
+    }else{
+        self.window.rootViewController = [[LYTabBarController alloc] init];
+    }
     [self netWorkChangeEvent];
-//    [self setUpMusicOption];
     [self setUpMusicOptionsWithNormal:YES];
+
     return YES;
 }
-
+#pragma mark -- 是否第一次进入app
+- (BOOL)isFirstLauchApp {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:kIsFirstLauchApp];
+}
+- (void)setIsFirstLauchApp:(BOOL)isFirstLauchApp
+{
+    [[NSUserDefaults standardUserDefaults] setBool:isFirstLauchApp forKey:kIsFirstLauchApp];
+}
 #pragma mark - 检测网络状态变化
 -(void)netWorkChangeEvent
 {
@@ -103,7 +118,7 @@ void gloablException(NSException * exception) {
 #pragma mark -  应用退到后台或者上划出来控制界面下划出来通知界面都会走这个方法
 - (void)applicationWillResignActive:(UIApplication *)application {
     [self setUpMusicOptionsWithNormal:YES];
-    [self performSelectorInBackground:@selector(playEmptyMusicInBackGround) withObject:nil];
+//    [self performSelectorInBackground:@selector(playEmptyMusicInBackGround) withObject:nil];
     [[NSNotificationCenter defaultCenter]postNotificationName:@"applicationWillResignActive" object:nil];
 }
 #pragma mark - 从上面的场景中回到应用就会执行这个方法

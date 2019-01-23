@@ -10,7 +10,6 @@
 #import "BasicVC.h"
 #import "WIFIBlueToothVC.h"
 #import "OtherVC.h"
-#import "AudioAndVideoVC.h"
 
 #import "UIImage+LYColor.h"
 #import "UIButton+LYButton.h"
@@ -47,11 +46,11 @@
                                                                    normalImage:[UIImage imageNamed:@"message_normal"]
                                                                  selectedImage:[UIImage imageNamed:@"message_highlight"]];
     
-    UINavigationController *sameCity = [self navigationControllerWithController:[AudioAndVideoVC class]
-                                                                    tabBarTitle:@"Media"
-                                                                    normalImage:[UIImage imageNamed:@"mycity_normal"]
-                                                                  selectedImage:[UIImage imageNamed:@"mycity_highlight"]];
-    
+//    UINavigationController *sameCity = [self navigationControllerWithController:[AudioAndVideoVC class]
+//                                                                    tabBarTitle:@"Media"
+//                                                                    normalImage:[UIImage imageNamed:@"mycity_normal"]
+//                                                                  selectedImage:[UIImage imageNamed:@"mycity_highlight"]];
+//
     UINavigationController *mine = [self navigationControllerWithController:[WIFIBlueToothVC class]
                                                                    tabBarTitle:@"SmartHome"
                                                                 normalImage:[UIImage imageNamed:@"account_normal"]
@@ -63,7 +62,7 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:tabNormalColor, NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:tabSelectedColor, NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
     
-    self.viewControllers = @[homeVC,message,sameCity,mine];
+    self.viewControllers = @[homeVC,message,mine];
     
     
 }

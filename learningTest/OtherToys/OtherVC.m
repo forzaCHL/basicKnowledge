@@ -48,6 +48,7 @@
     mainCollectionView.dataSource = self;
     
 }
+
 #pragma mark collectionView代理方法
 //返回section个数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView

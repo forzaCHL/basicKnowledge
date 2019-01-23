@@ -22,7 +22,7 @@
 //    BaseCell *cell = [[BaseCell alloc]init];
 //    [cell log];
     [BaseCell log];
-     [FrameLog log];
+//     [FrameLog log];
 //    [Coding coding];
      
 }
