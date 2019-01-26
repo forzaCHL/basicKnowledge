@@ -10,7 +10,9 @@
 #import "delayVC.h"
 #import "ShareObj.h"
 #import "defineFile.h"
-
+#import "AlgorithmViewController.h"
+#import "JSWebViewController.h"
+#import "OCCallJSViewController.h"
 @interface BasicVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableView;
@@ -24,7 +26,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Basic things";
     self.navigationController.navigationBar.translucent = YES;
-    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试", nil];
+    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试",@"算法排序", @"JScallOC",@"OCcallJS",nil];
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -35,7 +37,7 @@
     }];
 }
 /* mak
- * 异步执行 + 并发队列
+ * 异步执行 + 并发队列\\\\  \  ``
  * 特点：可以开启多个线程，任务交替（同时）执行。
  */
 -(void)asyncConcurrent{
@@ -140,6 +142,15 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"基础面试"]){
         OperationViewController *vc = [OperationViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"算法排序"]){
+        AlgorithmViewController *vc = [AlgorithmViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"JScallOC"]){
+        JSWebViewController *vc = [JSWebViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"OCcallJS"]){
+        OCCallJSViewController *vc = [OCCallJSViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

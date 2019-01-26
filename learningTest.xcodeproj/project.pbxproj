@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1805EA0F21FAADB8006EA5F0 /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805EA0E21FAADB8006EA5F0 /* AlgorithmViewController.m */; };
+		1805EA1121FC4DF1006EA5F0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805EA1021FC4DF1006EA5F0 /* JavaScriptCore.framework */; };
+		1805EA1521FC4E1D006EA5F0 /* JSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805EA1421FC4E1D006EA5F0 /* JSWebViewController.m */; };
+		1805EA1921FC51B1006EA5F0 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 1805EA1821FC51B1006EA5F0 /* JSCallOC.html */; };
+		1805EA1C21FC5F68006EA5F0 /* OCCallJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805EA1B21FC5F68006EA5F0 /* OCCallJSViewController.m */; };
+		1805EA1E21FC6074006EA5F0 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 1805EA1D21FC6074006EA5F0 /* test.js */; };
 		181D4EA4207375BB0003274A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D4EA3207375BB0003274A /* Security.framework */; };
 		181D4EAB207385BC0003274A /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EA6207385BC0003274A /* NSString+AES.m */; };
 		181D4EAC207385BC0003274A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EAA207385BC0003274A /* GTMBase64.m */; };
@@ -170,6 +176,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1805EA0D21FAADB8006EA5F0 /* AlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmViewController.h; sourceTree = "<group>"; };
+		1805EA0E21FAADB8006EA5F0 /* AlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
+		1805EA1021FC4DF1006EA5F0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1805EA1321FC4E1D006EA5F0 /* JSWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSWebViewController.h; sourceTree = "<group>"; };
+		1805EA1421FC4E1D006EA5F0 /* JSWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSWebViewController.m; sourceTree = "<group>"; };
+		1805EA1821FC51B1006EA5F0 /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
+		1805EA1A21FC5F68006EA5F0 /* OCCallJSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCallJSViewController.h; sourceTree = "<group>"; };
+		1805EA1B21FC5F68006EA5F0 /* OCCallJSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCallJSViewController.m; sourceTree = "<group>"; };
+		1805EA1D21FC6074006EA5F0 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 		181D4EA2207374D00003274A /* learningTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = learningTest.entitlements; sourceTree = "<group>"; };
 		181D4EA3207375BB0003274A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		181D4EA6207385BC0003274A /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
@@ -392,6 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1805EA1121FC4DF1006EA5F0 /* JavaScriptCore.framework in Frameworks */,
 				181D4EA4207375BB0003274A /* Security.framework in Frameworks */,
 				182A4ABC2069D28B00EAC437 /* IJKMediaFramework.framework in Frameworks */,
 				185E28EA1FAAF91400CB8531 /* VideoToolbox.framework in Frameworks */,
@@ -431,6 +447,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1805EA0C21FAAD6B006EA5F0 /* 基础算法排序 */ = {
+			isa = PBXGroup;
+			children = (
+				1805EA0D21FAADB8006EA5F0 /* AlgorithmViewController.h */,
+				1805EA0E21FAADB8006EA5F0 /* AlgorithmViewController.m */,
+			);
+			path = "基础算法排序";
+			sourceTree = "<group>";
+		};
+		1805EA1221FC4E0C006EA5F0 /* js交互 */ = {
+			isa = PBXGroup;
+			children = (
+				1805EA1821FC51B1006EA5F0 /* JSCallOC.html */,
+				1805EA1D21FC6074006EA5F0 /* test.js */,
+				1805EA1321FC4E1D006EA5F0 /* JSWebViewController.h */,
+				1805EA1421FC4E1D006EA5F0 /* JSWebViewController.m */,
+				1805EA1A21FC5F68006EA5F0 /* OCCallJSViewController.h */,
+				1805EA1B21FC5F68006EA5F0 /* OCCallJSViewController.m */,
+			);
+			path = "js交互";
+			sourceTree = "<group>";
+		};
 		181D4EA5207385BC0003274A /* GTMBase64 */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +564,7 @@
 		185E28D01FAAF79700CB8531 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1805EA1021FC4DF1006EA5F0 /* JavaScriptCore.framework */,
 				181D4EA3207375BB0003274A /* Security.framework */,
 				1878B2121FAC4A03004746EA /* libc.tbd */,
 				1878B2061FAC4310004746EA /* libc++.tbd */,
@@ -765,6 +804,8 @@
 		18F04CF3206CF23500EC310A /* BasicRice */ = {
 			isa = PBXGroup;
 			children = (
+				1805EA1221FC4E0C006EA5F0 /* js交互 */,
+				1805EA0C21FAAD6B006EA5F0 /* 基础算法排序 */,
 				1896CC1A21F6EA8D002C3071 /* 单例类 */,
 				18F04B68206CE3D600EC310A /* BasicVC.h */,
 				18F04B69206CE3D600EC310A /* BasicVC.m */,
@@ -1201,10 +1242,12 @@
 				185BCE901F8F525E00D1BEBA /* LaunchScreen.storyboard in Resources */,
 				18F04B7E206CE3D600EC310A /* new_tab_my_n@2x.png in Resources */,
 				18F04B77206CE3D600EC310A /* new_tab_course_n@3x.png in Resources */,
+				1805EA1921FC51B1006EA5F0 /* JSCallOC.html in Resources */,
 				1872405F208096E700D7F0E0 /* u35.png in Resources */,
 				185BCE8D1F8F525E00D1BEBA /* Assets.xcassets in Resources */,
 				18F04B78206CE3D600EC310A /* new_tab_home@2x.png in Resources */,
 				18F04B7F206CE3D600EC310A /* new_tab_my_n@3x.png in Resources */,
+				1805EA1E21FC6074006EA5F0 /* test.js in Resources */,
 				18F04B70206CE3D600EC310A /* new_tab_ask_home@2x.png in Resources */,
 				18360EBC21F082BB00672DAA /* video.mp4 in Resources */,
 				18F04B96206CEB5B00EC310A /* mycity_normal@2x.png in Resources */,
@@ -1341,6 +1384,7 @@
 				187240522080904000D7F0E0 /* BannerView.m in Sources */,
 				18F04D61206CF2BE00EC310A /* Author.m in Sources */,
 				187A71C6207C4CA800B67F43 /* delayVC.m in Sources */,
+				1805EA1C21FC5F68006EA5F0 /* OCCallJSViewController.m in Sources */,
 				185E29971FAB18D000CB8531 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				18F04BA1206CEB9E00EC310A /* UIImage+LYColor.m in Sources */,
 				18F04D64206CF2BE00EC310A /* Dog.m in Sources */,
@@ -1358,6 +1402,7 @@
 				181D4EAC207385BC0003274A /* GTMBase64.m in Sources */,
 				18F04D62206CF2BE00EC310A /* Book.m in Sources */,
 				18F04D42206CF23500EC310A /* MyAssertHandler.m in Sources */,
+				1805EA1521FC4E1D006EA5F0 /* JSWebViewController.m in Sources */,
 				18F04D3E206CF23500EC310A /* PropertyVC.m in Sources */,
 				185E298D1FAB18D000CB8531 /* AFHTTPSessionManager.m in Sources */,
 				181D4EAB207385BC0003274A /* NSString+AES.m in Sources */,
@@ -1368,6 +1413,7 @@
 				185E298F1FAB18D000CB8531 /* AFSecurityPolicy.m in Sources */,
 				185BCE8B1F8F525E00D1BEBA /* learningTest.xcdatamodeld in Sources */,
 				18F04D66206CF2BE00EC310A /* Master.m in Sources */,
+				1805EA0F21FAADB8006EA5F0 /* AlgorithmViewController.m in Sources */,
 				18F04D35206CF23500EC310A /* GCDVC.m in Sources */,
 				18F04D65206CF2BE00EC310A /* KvokvcVC.m in Sources */,
 				18CE5D60207462D8009BED20 /* RSA.m in Sources */,
