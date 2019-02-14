@@ -74,6 +74,12 @@
 		187A71C6207C4CA800B67F43 /* delayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A71C5207C4CA800B67F43 /* delayVC.m */; };
 		1896CC1D21F6EAC1002C3071 /* ShareObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1896CC1C21F6EAC1002C3071 /* ShareObj.m */; };
 		1896CC2321F6FAA1002C3071 /* first.m in Sources */ = {isa = PBXBuildFile; fileRef = 1896CC2221F6FAA1002C3071 /* first.m */; };
+		189C540222156A1E00EA525D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189C53F022156A1E00EA525D /* Assets.xcassets */; };
+		189C540322156A1E00EA525D /* QiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53F222156A1E00EA525D /* QiViewController.m */; };
+		189C540522156A1E00EA525D /* QiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53F722156A1E00EA525D /* QiDataModel.m */; };
+		189C540622156A1E00EA525D /* QiCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FB22156A1E00EA525D /* QiCardView.m */; };
+		189C540722156A1E00EA525D /* QiCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FC22156A1E00EA525D /* QiCardViewCell.m */; };
+		189C540822156A1E00EA525D /* QiCardItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FF22156A1E00EA525D /* QiCardItemCell.m */; };
 		18CE5D5D20745D6D009BED20 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */; };
 		18CE5D60207462D8009BED20 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5E207462D8009BED20 /* RSA.m */; };
 		18CE5D6620746412009BED20 /* MBProgressHUD+mutiLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D6220746412009BED20 /* MBProgressHUD+mutiLine.m */; };
@@ -286,6 +292,17 @@
 		1896CC2021F6F8B1002C3071 /* defineFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineFile.h; sourceTree = "<group>"; };
 		1896CC2121F6FAA1002C3071 /* first.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = first.h; sourceTree = "<group>"; };
 		1896CC2221F6FAA1002C3071 /* first.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = first.m; sourceTree = "<group>"; };
+		189C53F022156A1E00EA525D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		189C53F222156A1E00EA525D /* QiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiViewController.m; sourceTree = "<group>"; };
+		189C53F322156A1E00EA525D /* QiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiViewController.h; sourceTree = "<group>"; };
+		189C53F622156A1E00EA525D /* QiDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiDataModel.h; sourceTree = "<group>"; };
+		189C53F722156A1E00EA525D /* QiDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiDataModel.m; sourceTree = "<group>"; };
+		189C53FA22156A1E00EA525D /* QiCardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCardViewCell.h; sourceTree = "<group>"; };
+		189C53FB22156A1E00EA525D /* QiCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCardView.m; sourceTree = "<group>"; };
+		189C53FC22156A1E00EA525D /* QiCardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCardViewCell.m; sourceTree = "<group>"; };
+		189C53FD22156A1E00EA525D /* QiCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCardView.h; sourceTree = "<group>"; };
+		189C53FE22156A1E00EA525D /* QiCardItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCardItemCell.h; sourceTree = "<group>"; };
+		189C53FF22156A1E00EA525D /* QiCardItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCardItemCell.m; sourceTree = "<group>"; };
 		18CE5D5B20745D6D009BED20 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		18CE5D5E207462D8009BED20 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
@@ -715,6 +732,56 @@
 			path = "单例类";
 			sourceTree = "<group>";
 		};
+		189C53EE22156A1E00EA525D /* QiCardView */ = {
+			isa = PBXGroup;
+			children = (
+				189C53F022156A1E00EA525D /* Assets.xcassets */,
+				189C53F122156A1E00EA525D /* Controller */,
+				189C53F522156A1E00EA525D /* Model */,
+				189C53F822156A1E00EA525D /* View */,
+			);
+			path = QiCardView;
+			sourceTree = "<group>";
+		};
+		189C53F122156A1E00EA525D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				189C53F222156A1E00EA525D /* QiViewController.m */,
+				189C53F322156A1E00EA525D /* QiViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		189C53F522156A1E00EA525D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189C53F622156A1E00EA525D /* QiDataModel.h */,
+				189C53F722156A1E00EA525D /* QiDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		189C53F822156A1E00EA525D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				189C53F922156A1E00EA525D /* QiCardView */,
+				189C53FE22156A1E00EA525D /* QiCardItemCell.h */,
+				189C53FF22156A1E00EA525D /* QiCardItemCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		189C53F922156A1E00EA525D /* QiCardView */ = {
+			isa = PBXGroup;
+			children = (
+				189C53FA22156A1E00EA525D /* QiCardViewCell.h */,
+				189C53FB22156A1E00EA525D /* QiCardView.m */,
+				189C53FC22156A1E00EA525D /* QiCardViewCell.m */,
+				189C53FD22156A1E00EA525D /* QiCardView.h */,
+			);
+			path = QiCardView;
+			sourceTree = "<group>";
+		};
 		18CE5D5A20745D4F009BED20 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +871,7 @@
 		18F04CF3206CF23500EC310A /* BasicRice */ = {
 			isa = PBXGroup;
 			children = (
+				189C53EE22156A1E00EA525D /* QiCardView */,
 				1805EA1221FC4E0C006EA5F0 /* js交互 */,
 				1805EA0C21FAAD6B006EA5F0 /* 基础算法排序 */,
 				1896CC1A21F6EA8D002C3071 /* 单例类 */,
@@ -1249,6 +1317,7 @@
 				18F04B7F206CE3D600EC310A /* new_tab_my_n@3x.png in Resources */,
 				1805EA1E21FC6074006EA5F0 /* test.js in Resources */,
 				18F04B70206CE3D600EC310A /* new_tab_ask_home@2x.png in Resources */,
+				189C540222156A1E00EA525D /* Assets.xcassets in Resources */,
 				18360EBC21F082BB00672DAA /* video.mp4 in Resources */,
 				18F04B96206CEB5B00EC310A /* mycity_normal@2x.png in Resources */,
 				18F04B7D206CE3D600EC310A /* new_tab_my@3x.png in Resources */,
@@ -1359,10 +1428,12 @@
 				1872404F2080902400D7F0E0 /* RSAViewController.m in Sources */,
 				18F04D6D206CF2DC00EC310A /* TestVC.m in Sources */,
 				18F04B9E206CEB6800EC310A /* UIButton+LYButton.m in Sources */,
+				189C540722156A1E00EA525D /* QiCardViewCell.m in Sources */,
 				18F04D36206CF23500EC310A /* RuntimeVC.m in Sources */,
 				18F04B9D206CEB6800EC310A /* LYTabBarController.m in Sources */,
 				18F04D39206CF23500EC310A /* TestClass+Category.m in Sources */,
 				18F04B85206CE3D600EC310A /* WIFIBlueToothVC.m in Sources */,
+				189C540622156A1E00EA525D /* QiCardView.m in Sources */,
 				185E299C1FAB18D000CB8531 /* UIRefreshControl+AFNetworking.m in Sources */,
 				18F04D38206CF23500EC310A /* TestClass+AssociatedObject.m in Sources */,
 				18F04D3F206CF23500EC310A /* SortVC.m in Sources */,
@@ -1377,7 +1448,9 @@
 				18360EB721EC82F200672DAA /* OperationViewController.m in Sources */,
 				18F04B84206CE3D600EC310A /* OtherVC.m in Sources */,
 				18F04D32206CF23500EC310A /* BlockTestVC.m in Sources */,
+				189C540322156A1E00EA525D /* QiViewController.m in Sources */,
 				18F04D6C206CF2DC00EC310A /* Helper.m in Sources */,
+				189C540522156A1E00EA525D /* QiDataModel.m in Sources */,
 				18360EBA21F081C900672DAA /* ZYLauchMovieViewController.m in Sources */,
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
@@ -1426,6 +1499,7 @@
 				18F04D3B206CF23500EC310A /* TestClass.m in Sources */,
 				18F04D37206CF23500EC310A /* RuntimeKit.m in Sources */,
 				185E298E1FAB18D000CB8531 /* AFNetworkReachabilityManager.m in Sources */,
+				189C540822156A1E00EA525D /* QiCardItemCell.m in Sources */,
 				18F04D41206CF23500EC310A /* AssertVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

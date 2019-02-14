@@ -13,6 +13,7 @@
 #import "AlgorithmViewController.h"
 #import "JSWebViewController.h"
 #import "OCCallJSViewController.h"
+#import "QiViewController.h"
 @interface BasicVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableView;
@@ -26,7 +27,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Basic things";
     self.navigationController.navigationBar.translucent = YES;
-    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试",@"算法排序", @"JScallOC",@"OCcallJS",nil];
+    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试",@"算法排序", @"JScallOC",@"OCcallJS",@"卡片",nil];
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -151,6 +152,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"OCcallJS"]){
         OCCallJSViewController *vc = [OCCallJSViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"卡片"]){
+        QiViewController *vc = [QiViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
