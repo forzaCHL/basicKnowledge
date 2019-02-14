@@ -34,9 +34,9 @@
     [self.view addSubview:self.textField];
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
-    but.frame = CGRectMake(100, 250, 100, 40);
+    but.frame = CGRectMake(100, 250, 200, 40);
     [but setTitle:@"交给js计算阶乘" forState:UIControlStateNormal];
-    but.titleLabel.textColor = [UIColor blackColor];
+    but.backgroundColor= [UIColor greenColor];
     [but addTarget:self action:@selector(compute) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
     

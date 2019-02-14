@@ -14,8 +14,6 @@ typedef void(^returnString) (NSString *str);
 
 @property(nonatomic,strong)returnString  strBlock;
 
-
 @property (nonatomic, copy) void (^BlockII)(NSString * str);
-
 
 @end

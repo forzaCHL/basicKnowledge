@@ -39,7 +39,7 @@
         NSLog(@"str -->%@",str);
     };
     vc.BlockII = ^(NSString *str) {
-        NSLog(@"blockII");
+        NSLog(@"str -->%@",str);
     };
     
 }
