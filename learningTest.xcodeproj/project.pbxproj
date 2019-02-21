@@ -80,6 +80,7 @@
 		189C540622156A1E00EA525D /* QiCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FB22156A1E00EA525D /* QiCardView.m */; };
 		189C540722156A1E00EA525D /* QiCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FC22156A1E00EA525D /* QiCardViewCell.m */; };
 		189C540822156A1E00EA525D /* QiCardItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C53FF22156A1E00EA525D /* QiCardItemCell.m */; };
+		189C540E221644B600EA525D /* LianshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C540D221644B600EA525D /* LianshiViewController.m */; };
 		18CE5D5D20745D6D009BED20 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */; };
 		18CE5D60207462D8009BED20 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5E207462D8009BED20 /* RSA.m */; };
 		18CE5D6620746412009BED20 /* MBProgressHUD+mutiLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D6220746412009BED20 /* MBProgressHUD+mutiLine.m */; };
@@ -303,6 +304,8 @@
 		189C53FD22156A1E00EA525D /* QiCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCardView.h; sourceTree = "<group>"; };
 		189C53FE22156A1E00EA525D /* QiCardItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCardItemCell.h; sourceTree = "<group>"; };
 		189C53FF22156A1E00EA525D /* QiCardItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCardItemCell.m; sourceTree = "<group>"; };
+		189C540C221644B600EA525D /* LianshiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LianshiViewController.h; sourceTree = "<group>"; };
+		189C540D221644B600EA525D /* LianshiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LianshiViewController.m; sourceTree = "<group>"; };
 		18CE5D5B20745D6D009BED20 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		18CE5D5E207462D8009BED20 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
@@ -782,6 +785,15 @@
 			path = QiCardView;
 			sourceTree = "<group>";
 		};
+		189C540B221644A500EA525D /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				189C540C221644B600EA525D /* LianshiViewController.h */,
+				189C540D221644B600EA525D /* LianshiViewController.m */,
+			);
+			path = "链式编程";
+			sourceTree = "<group>";
+		};
 		18CE5D5A20745D4F009BED20 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -871,12 +883,13 @@
 		18F04CF3206CF23500EC310A /* BasicRice */ = {
 			isa = PBXGroup;
 			children = (
+				18F04B68206CE3D600EC310A /* BasicVC.h */,
+				18F04B69206CE3D600EC310A /* BasicVC.m */,
+				189C540B221644A500EA525D /* 链式编程 */,
 				189C53EE22156A1E00EA525D /* QiCardView */,
 				1805EA1221FC4E0C006EA5F0 /* js交互 */,
 				1805EA0C21FAAD6B006EA5F0 /* 基础算法排序 */,
 				1896CC1A21F6EA8D002C3071 /* 单例类 */,
-				18F04B68206CE3D600EC310A /* BasicVC.h */,
-				18F04B69206CE3D600EC310A /* BasicVC.m */,
 				18360EB421EC82C100672DAA /* 算数运算 */,
 				187A71C3207C4C9300B67F43 /* 定时器 */,
 				18F04D67206CF2DC00EC310A /* 正则表达式判断 */,
@@ -1447,6 +1460,7 @@
 				185E29951FAB18D000CB8531 /* AFAutoPurgingImageCache.m in Sources */,
 				18360EB721EC82F200672DAA /* OperationViewController.m in Sources */,
 				18F04B84206CE3D600EC310A /* OtherVC.m in Sources */,
+				189C540E221644B600EA525D /* LianshiViewController.m in Sources */,
 				18F04D32206CF23500EC310A /* BlockTestVC.m in Sources */,
 				189C540322156A1E00EA525D /* QiViewController.m in Sources */,
 				18F04D6C206CF2DC00EC310A /* Helper.m in Sources */,

@@ -26,23 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningTest/BasicRice/js&#x4ea4;&#x4e92;/JSWebViewController.m"
-            timestampString = "571729305.311445"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-pushViewController:title:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "learningTest/BasicRice/js&#x4ea4;&#x4e92;/JSWebViewController.m"
-            timestampString = "571729305.311859"
+            timestampString = "571887189.513379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -58,11 +42,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "learningTest/BasicRice/js&#x4ea4;&#x4e92;/JSWebViewController.m"
-            timestampString = "571729305.312095"
+            timestampString = "571887189.513914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
+            landmarkName = "-webViewDidFinishLoad:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "learningTest/BasicRice/js&#x4ea4;&#x4e92;/JSWebViewController.m"
+            timestampString = "571887211.179649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "-webViewDidFinishLoad:"
             landmarkType = "7">
          </BreakpointContent>
