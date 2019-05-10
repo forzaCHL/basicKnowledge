@@ -10,6 +10,9 @@
 #import "RSAViewController.h"
 #import "MyCollectionViewCell.h"
 #import "BannerViewController.h"
+#import "KvokvcVC.h"
+#import "cats.h"
+#import "dogs.h"
 @interface OtherVC ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *mainCollectionView;
@@ -29,7 +32,7 @@
     //设置headerView的尺寸大小
     layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 44);
     //该方法也可以设置itemSize
-    layout.itemSize =CGSizeMake(110, 150);
+//    layout.itemSize =CGSizeMake(110, 150);
     
     //2.初始化collectionView
     mainCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
@@ -53,7 +56,7 @@
 //返回section个数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 3;
+    return 5;
 }
 
 //每个section的item个数
@@ -66,10 +69,11 @@
 {
     
     MyCollectionViewCell *cell = (MyCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndexPath:indexPath];
-    
+    cell.contentView.layer.borderWidth = .5;
+    cell.contentView.layer.borderColor = [UIColor redColor].CGColor;
     cell.botlabel.text = [NSString stringWithFormat:@"{%ld,%ld}",(long)indexPath.section,(long)indexPath.row];
     
-    cell.backgroundColor = [UIColor yellowColor];
+//    cell.backgroundColor = [UIColor yellowColor];
     if (indexPath.section == 0) {
         switch (indexPath.row) {
             case 0:
@@ -80,6 +84,15 @@
                 break;
             case 2:
                 cell.botlabel.text = @"BannerView";
+                break;
+            case 3:
+                cell.botlabel.text = @"kvokvc";
+                break;
+            case 4:
+                cell.botlabel.text = @"table-cat";
+                break;
+            case 5:
+                cell.botlabel.text = @"table-dog";
                 break;
             default:
                 break;
@@ -92,7 +105,7 @@
 //设置每个item的尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(90, 130);
+    return CGSizeMake(70, 90);
 }
 
 //footer的size
@@ -130,7 +143,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"reusableView" forIndexPath:indexPath];
-    headerView.backgroundColor =RGB(204, 204, 204);
+    headerView.backgroundColor = RGB(240, 240, 240);
     
     
 //    重用
@@ -182,6 +195,24 @@
             case 2:
             {
                 BannerViewController *vc =[BannerViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 3:
+            {
+                KvokvcVC *vc =[KvokvcVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 4:
+            {
+                cats *vc =[cats new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 5:
+            {
+                dogs *vc =[dogs new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
                 break;

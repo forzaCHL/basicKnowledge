@@ -7,6 +7,10 @@
 //
 
 #import "CategerVC.h"
+#import "cateSubVC.h"
+#import "NSString+Emoji.h"
+#import "CategerVC+category.h"
+
 
 @interface CategerVC ()
 
@@ -16,9 +20,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
-}
+    self.view.backgroundColor = [UIColor whiteColor];
+    cateSubVC *vc = [cateSubVC new];
+    [self methods];
+    [vc methods];
+    
+    NSString *biaoqing = @"😊";
+    NSString *wenzi = @"wenzi";
 
+    BOOL b1 = [NSString isContainsEmoji:biaoqing];
+    BOOL b2 = [NSString isContainsEmoji:wenzi];
+    NSLog(@"----%d----%d",b1,b2);
+    
+    
+    
+    
+}
+-(void)methods{
+    NSLog(@"CategerVC");
+}
 
 /**
  类本身也是一个对象 class类型的对象

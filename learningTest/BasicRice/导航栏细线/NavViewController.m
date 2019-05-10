@@ -24,6 +24,7 @@
     
     [self.navigationController.navigationBar setShadowImage:[self imageWithColor:[UIColor redColor] size:CGSizeMake(self.view.frame.size.width, 0.5)]];
     
+    
 
 }
 -(UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {

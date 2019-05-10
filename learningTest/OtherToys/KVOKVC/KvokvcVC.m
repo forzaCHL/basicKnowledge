@@ -30,7 +30,7 @@
 -(void)KVCMethod{
     /**
      KVC 有两个方法：一个是设置 key 的值，另一个是获取 key 的值
-     1>基本取值赋值
+     1>基本取值赋值 setvalue forkey
      */
     Dog *dog = [[Dog alloc]init];
     Master *master = [Master new];
@@ -46,6 +46,7 @@
     NSLog(@"基础赋值取值-->Changed %@'s name to: %@", originalName, newName);
     /**
      键值嵌套 keyPath
+     setvalue forkeypath
      */
     [dog setValue:master forKey:@"master"];
     [dog setValue:@"misiro" forKeyPath:@"master.name"];
@@ -91,10 +92,11 @@
 }
 -(void)KVOMethod{
     myDog = [Dog new];
+    [myDog setValue:@33 forKey:@"age"];
     [myDog addObserver:self forKeyPath:@"age"options:NSKeyValueObservingOptionNew context:nil];
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [myDog setValue:@22 forKey:@"age"];
+    [myDog setValue:@44 forKey:@"age"];
     NSLog(@"set dog age= %@", [myDog valueForKey:@"age"]);
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{

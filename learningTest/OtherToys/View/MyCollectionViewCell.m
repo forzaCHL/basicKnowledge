@@ -14,13 +14,14 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        _topImage  = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, 70, 70)];
+        _topImage  = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
         [self.contentView addSubview:_topImage];
         _topImage.image = [UIImage imageNamed:@"account_normal"];
         
-        _botlabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 80, 70, 30)];
+        _botlabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, 70, 30)];
         _botlabel.textAlignment = NSTextAlignmentCenter;
-        _botlabel.font = [UIFont systemFontOfSize:15];
+        _botlabel.numberOfLines = 0;
+        _botlabel.font = [UIFont systemFontOfSize:12];
         [self.contentView addSubview:_botlabel];
     }
     

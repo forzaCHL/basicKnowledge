@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2111975792EDF9239C4E5443D074D4C3'
-               BlueprintName = 'MJPhotoBrowser'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMJPhotoBrowser.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F489CE015FB8EC29E1E6D1658075C429"
+               BlueprintName = "MJPhotoBrowser"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libMJPhotoBrowser.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

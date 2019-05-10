@@ -8,6 +8,7 @@
 
 #import "PropertyVC.h"
 
+
 @interface PropertyVC ()
 
 @end
@@ -17,10 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
     
     [self strong];
     
+
 }
 
 - (void)didReceiveMemoryWarning {

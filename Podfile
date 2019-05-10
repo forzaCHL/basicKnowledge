@@ -7,5 +7,6 @@ pod 'SDWebImage', '~> 3.7.6'
 pod 'YYKit', '~> 1.0.7'
 pod 'Masonry', '~> 0.6.4'
 pod 'CocoaAsyncSocket', '7.6.2'
+pod 'Realm'
 
 end

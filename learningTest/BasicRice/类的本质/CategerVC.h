@@ -10,4 +10,10 @@
 
 @interface CategerVC : UIViewController
 
+
+@property(nonatomic,strong)NSString *name;
+
+@property(nonatomic,assign)int age;
+
+-(void)methods;
 @end

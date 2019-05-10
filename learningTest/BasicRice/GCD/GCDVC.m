@@ -64,4 +64,17 @@
         NSLog(@"testGCDGroup3 更新UI操作");
     });
 }
+#pragma mark ----------- 耗时任务放在子线程
+-(void)needmuchtime{
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        // 处理耗时操作在此次添加
+        
+        //通知主线程刷新
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //在主线程刷新UI
+        });
+        
+    });
+}
 @end

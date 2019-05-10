@@ -35,12 +35,30 @@
     
     ViewControllerI *vc = [ViewControllerI new];
     [self.navigationController pushViewController:vc animated:YES];
+    //属性
     vc.strBlock = ^(NSString *str) {
         NSLog(@"str -->%@",str);
     };
     vc.BlockII = ^(NSString *str) {
         NSLog(@"str -->%@",str);
     };
+    //方法参数
+    [vc blckmtthod];
+    
+    [vc blockinfo:^(NSString *str) {
+        NSLog(@"blockinfostr-->%@",str);
+    }];
+    
+    [vc showblock:^(NSString * showmsg) {
+        NSLog(@"showblock-->%@",showmsg);
+    }];
+    
+    [ViewControllerI blockclass:^(NSString *str) {
+        NSLog(@"blockclassstr-->%@",str);
+    }];
+    
+    
+    vc.showblockii(200);
     
 }
 - (void)didReceiveMemoryWarning {

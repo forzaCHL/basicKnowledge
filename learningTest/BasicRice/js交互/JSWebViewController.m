@@ -66,10 +66,11 @@
     };
     
     // 以 block 形式关联 JavaScript function
-    self.context[@"alert"] =
-    ^(NSString *str)
+//    <input type="button" value="oc原生Alert" onclick="alertClick('alert');" />
+    self.context[@"alertClick"] =
+    ^(NSString *str,NSString *str2)
     {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"msg from js" message:str delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:str2 message:str delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         [alert show];
     };
     

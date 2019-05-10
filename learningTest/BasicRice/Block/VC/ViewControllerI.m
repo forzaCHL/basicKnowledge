@@ -53,4 +53,29 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.myText resignFirstResponder];
 }
+
+#pragma mark ----------- block 作为参数使用
++(void)blockclass:(returnString)block{
+    if (block) {
+        block(@"blockclass");
+    }
+}
+-(void)blckmtthod{
+     NSLog(@"blckmtthod");
+}
+-(void)blockinfo:(returnString)block{
+    if (block) {
+        block(@"blockinfo");
+    }
+}
+-(void)showblock:(void (^)(NSString *))block{
+    if (block) {
+        block(@"showblockmsg");
+    }
+}
+-(void (^)(int))showblockii{
+    return ^(int show){
+        NSLog(@"showblockii %d",show);
+    } ;
+}
 @end
