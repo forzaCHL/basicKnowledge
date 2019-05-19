@@ -33,7 +33,7 @@
     NSLog(@"----%d----%d",b1,b2);
     
     
-    
+    BOOL ismeta = class_isMetaClass([cateSubVC class]);//判断类是否为元类
     
 }
 -(void)methods{
