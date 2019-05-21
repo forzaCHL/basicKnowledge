@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol Protocol <NSObject>
+
+-(void)setProtocol:(NSString *)parm;
+
+@end
+
+
+
 typedef void(^returnString) (NSString *str);
 
 @interface ViewControllerI : UIViewController
@@ -32,4 +40,5 @@ typedef void(^returnString) (NSString *str);
 //Block作为返回值
 - (void(^)(int))showblockii;
 
+@property(nonatomic,assign)id <Protocol> delegate;
 @end

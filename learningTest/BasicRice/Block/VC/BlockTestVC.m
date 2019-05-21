@@ -8,8 +8,8 @@
 
 #import "BlockTestVC.h"
 #import "ViewControllerI.h"
-
-@interface BlockTestVC ()
+#import "setProtocoll.h"
+@interface BlockTestVC ()<Protocol,setProtocoll>
 
 @end
 
@@ -22,7 +22,16 @@
 //    [self useWithTypedef];
     [self creatButton];
     
+    //遵守了protocal 就拥有了protocol声明的方法
+    [self setEat];
+    [self setDrink];
     
+}
+- (void)setEat{
+    NSLog(@"setEat");
+}
+- (void)setDrink{
+    NSLog(@"setDrink");
 }
 -(void)creatButton{
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -34,6 +43,7 @@
 -(void)pushVC{
     
     ViewControllerI *vc = [ViewControllerI new];
+    vc.delegate = self;
     [self.navigationController pushViewController:vc animated:YES];
     //属性
     vc.strBlock = ^(NSString *str) {
@@ -60,6 +70,10 @@
     
     vc.showblockii(200);
     
+}
+#pragma mark ----------- 代理
+- (void)setProtocol:(NSString *)parm{
+    NSLog(@"pra %@",parm);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -88,4 +102,5 @@
     };
     NSLog(@"useWithTypedef-->%d",_sumBlock(3,4));
 }
+
 @end

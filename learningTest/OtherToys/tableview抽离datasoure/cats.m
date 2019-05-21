@@ -15,7 +15,7 @@ static NSString * const cellIdentifier = @"catCell";
 
 @interface cats ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) ArrayDataSource *photosArrayDataSource;
+@property (nonatomic, strong) ArrayDataSource *arrayDataSource;
 
 @property (nonatomic, strong) UITableView *tabView;
 
@@ -38,10 +38,10 @@ static NSString * const cellIdentifier = @"catCell";
     };
     self.tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height-80) style:UITableViewStylePlain];
     self.tabView.rowHeight = 50;
-    self.photosArrayDataSource = [[ArrayDataSource alloc] initWithItems:dogList
+    self.arrayDataSource = [[ArrayDataSource alloc] initWithItems:dogList
                                                          cellIdentifier:cellIdentifier
                                                      configureCellBlock:configureCell];
-    self.tabView.dataSource = self.photosArrayDataSource;
+    self.tabView.dataSource = self.arrayDataSource;
     self.tabView.delegate = self;
     [self.tabView registerClass:[catTableViewCell class] forCellReuseIdentifier:cellIdentifier];
     [self.view addSubview:self.tabView];

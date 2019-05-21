@@ -37,14 +37,19 @@
     NSString *className = NSStringFromClass([self class]);
     NSLog(@"%@ will appear", className);
 //    [self performSelector];
-//    [self addProperty];
+    [self addProperty];
     
-    [self methodFromGithub];
+//    [self methodFromGithub];
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    [self sendMsg];
 }
 #pragma mark ----------- 发送消息
 -(void)sendMsg{
     TestVC *vc = [[TestVC alloc]init];
     //    1 sendMsg
+//    1.不带参数的方法被编译为：objc_msgSend(receiver，selector)
+//    2.带参数的方法被编译为：objc_msgSend(recevier，selector，org1，org2，…)
     ((void (*) (id, SEL)) (void *)objc_msgSend)(vc, sel_registerName("testRuntime"));
     ((void (*) (id, SEL)) (void *)objc_msgSend)(vc,@selector(testRuntimeII:));
 }

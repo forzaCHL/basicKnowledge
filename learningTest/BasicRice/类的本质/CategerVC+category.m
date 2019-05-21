@@ -7,6 +7,9 @@
 //
 
 #import "CategerVC+category.h"
+#import <objc/runtime.h>
+
+
 
 @implementation CategerVC (category)
 
@@ -14,4 +17,6 @@
 -(void)methods{
     NSLog(@"category");
 }
+
+
 @end

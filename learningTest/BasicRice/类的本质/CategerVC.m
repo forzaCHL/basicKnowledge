@@ -14,6 +14,13 @@
 
 @interface CategerVC ()
 
+// 类扩展是写在.m中的 @implementation之前开始的部分，所谓的类的continue区域
+/**
+ 作用：快速定义类的私有属性
+ */
+@property (nonatomic, strong) NSString *boss;
+- (void)bossAngry; // 扩展方法
+
 @end
 
 @implementation CategerVC
@@ -28,10 +35,27 @@
     NSString *biaoqing = @"😊";
     NSString *wenzi = @"wenzi";
 
+    wenzi.cateText = @"demo1";
+    NSLog(@"0获取关联属性：%@",wenzi.cateText);
+    
+    [wenzi clearAssociatedObject];
+    NSLog(@"1获取关联属性：%@",wenzi.cateText);
+    
+    
     BOOL b1 = [NSString isContainsEmoji:biaoqing];
     BOOL b2 = [NSString isContainsEmoji:wenzi];
+    
+    
+    
+//    [NSString helpYou];
+//    [wenzi helpMe];
+
     NSLog(@"----%d----%d",b1,b2);
     
+    NSLog(@"loop%@",[NSRunLoop currentRunLoop]);
+//    [NSRunLoop currentRunLoop]; // 获得当前线程的RunLoop对象
+//    [NSRunLoop mainRunLoop]; // 获得主线程的RunLoop对象
+
     
     
     
