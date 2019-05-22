@@ -34,7 +34,10 @@
     
     
     BOOL ismeta = class_isMetaClass([cateSubVC class]);//判断类是否为元类
-    
+    BOOL re1 = [CategerVC isKindOfClass:[CategerVC class]];
+    BOOL re2 = [CategerVC isMemberOfClass:[CategerVC class]];
+    BOOL re3 = [NSObject isKindOfClass:[NSObject class]];
+    BOOL re4 = [NSObject isMemberOfClass:[NSObject class]];
 }
 -(void)methods{
     NSLog(@"CategerVC");

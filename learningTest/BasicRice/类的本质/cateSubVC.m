@@ -22,6 +22,15 @@
 -(void)methods{
     NSLog(@"cateSubVC");
 }
+-(instancetype)init{
+    if (self == [super init]) {
+        NSLog(@"1-%@",[self class]);
+        NSLog(@"2-%@",[super class]);
+        NSLog(@"3-%@",[self superclass]);
+        NSLog(@"4-%@",[super superclass]);
+    }
+    return self;
+}
 /*
 #pragma mark - Navigation
 

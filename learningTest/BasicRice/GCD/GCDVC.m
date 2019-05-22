@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testGCDGroup3];
+    self.view.backgroundColor = [UIColor whiteColor];
+//    [self testGCDGroup3];
+    [self testSemaphore];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:)name:@"tongzhi" object:nil];
 }
 - (void)tongzhi:(NSNotification *)text{
@@ -32,7 +34,7 @@
     dispatch_group_t group = dispatch_group_create();
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(10); //信号总量是10
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < 30; i++)
     {
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);//信号量-1
         dispatch_group_async(group, queue, ^{
