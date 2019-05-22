@@ -18,10 +18,6 @@
 
 @implementation ArrayDataSource
 
-- (id)init
-{
-    return nil;
-}
 
 - (id)initWithItems:(NSArray *)anItems
      cellIdentifier:(NSString *)aCellIdentifier

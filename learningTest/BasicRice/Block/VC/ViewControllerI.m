@@ -52,6 +52,10 @@
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.myText resignFirstResponder];
+    
+    if ([self.delegate respondsToSelector:@selector(setProtocol:)]) {
+        [self.delegate setProtocol:@"setParm"];
+    }
 }
 
 #pragma mark ----------- block 作为参数使用

@@ -343,6 +343,7 @@
 		18AB8E8022851C35007A6BFC /* dogObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dogObj.m; sourceTree = "<group>"; };
 		18AB8E8222851C41007A6BFC /* catObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = catObj.h; sourceTree = "<group>"; };
 		18AB8E8322851C41007A6BFC /* catObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = catObj.m; sourceTree = "<group>"; };
+		18B61A5F229294A1004E2BBB /* setProtocoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setProtocoll.h; sourceTree = "<group>"; };
 		18CE5D5B20745D6D009BED20 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		18CE5D5E207462D8009BED20 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
@@ -980,7 +981,7 @@
 				18F04CFA206CF23500EC310A /* CoreData */,
 				18F04CFC206CF23500EC310A /* frame和bounds */,
 				18F04CFF206CF23500EC310A /* GCD */,
-				18F04D02206CF23500EC310A /* Runtime */,
+				18F04D02206CF23500EC310A /* RuntimeRunloop */,
 				18F04D12206CF23500EC310A /* UIViewAnimation */,
 				18F04D15206CF23500EC310A /* 导航栏细线 */,
 				18F04D18206CF23500EC310A /* 属性强弱引用 */,
@@ -1008,6 +1009,7 @@
 				18F04CF7206CF23500EC310A /* BlockTestVC.m */,
 				18F04CF8206CF23500EC310A /* ViewControllerI.h */,
 				18F04CF9206CF23500EC310A /* ViewControllerI.m */,
+				18B61A5F229294A1004E2BBB /* setProtocoll.h */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1045,14 +1047,14 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
-		18F04D02206CF23500EC310A /* Runtime */ = {
+		18F04D02206CF23500EC310A /* RuntimeRunloop */ = {
 			isa = PBXGroup;
 			children = (
 				18F04D03206CF23500EC310A /* RuntimeVC.h */,
 				18F04D04206CF23500EC310A /* RuntimeVC.m */,
 				18F04D05206CF23500EC310A /* ThirdBasicDemo */,
 			);
-			path = Runtime;
+			path = RuntimeRunloop;
 			sourceTree = "<group>";
 		};
 		18F04D05206CF23500EC310A /* ThirdBasicDemo */ = {
