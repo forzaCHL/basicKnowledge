@@ -37,4 +37,12 @@
 #import "AssertVC.h"
 #import "CategerVC.h"
 #import "Masonry.h"
+#import "UIAlertView+Blocks.h"
+#import "UIButton+LYButton.h"
+#import "UILabel+ZXYCategory.h"
+#import "UIButton+ZXYCategory.h"
+#import "UIView+LXView.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIAlertController+cateGory.h"
+
 #endif /* PrefixHeader_pch */

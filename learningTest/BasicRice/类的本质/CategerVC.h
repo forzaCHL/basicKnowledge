@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CategerVC : UIViewController
-
+{
+    NSString *tree;
+}
 
 @property(nonatomic,strong)NSString *name;
 

@@ -18,13 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    [self norMalBlock];
+    [self norMalBlock];
 //    [self useWithTypedef];
     [self creatButton];
     
     //遵守了protocal 就拥有了protocol声明的方法
     [self setEat];
     [self setDrink];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(nsObserver:) name:@"ns1" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(nsObserver2:) name:@"ns2" object:nil];
     
 }
 - (void)setEat{
@@ -79,13 +81,14 @@
     [super didReceiveMemoryWarning];
 }
 -(void)norMalBlock{
-    void (^normalBlock)()=^{
+    void (^normalBlock)(void)=^{
         NSLog(@"normalBlock 无参数,无返回值的block");
     };
     normalBlock();
     
     void (^normalBlockI)(int a,int b) = ^(int a,int b){
         NSLog(@"传入参数无返回值 %d",a+b);
+        self.text = @"123";
     };
     normalBlockI(3,4);
     
@@ -102,5 +105,26 @@
     };
     NSLog(@"useWithTypedef-->%d",_sumBlock(3,4));
 }
-
+#pragma mark -----------通知
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"ns1" object:nil];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"ns2" object:nil userInfo:@{@"name":@"cxk"}];
+}
+-(void)nsObserver:(NSNotification *)info{
+    NSDictionary *dic = info.userInfo;
+    NSLog(@"nsdic %@",dic);
+}
+-(void)nsObserver2:(NSNotification *)info{
+    NSDictionary *dic = info.userInfo;
+    NSLog(@"ns2dic %@",dic);
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    //先
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"ns1" object:nil];
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    //后
+}
 @end

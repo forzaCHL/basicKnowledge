@@ -57,7 +57,7 @@
 //    [NSRunLoop mainRunLoop]; // 获得主线程的RunLoop对象
 
     
-    
+    [self value];
     
 }
 -(void)methods{
@@ -103,4 +103,16 @@
      3.3.返回对象
 
  */
+#pragma mark ----------- 成员变量（实例变量）与属性
+-(void)value{
+//    self.tree = @"123";  报错
+    self -> tree = @"123 ";
+    NSLog(@"tree %@",tree);
+    
+    
+//    .在左边调用setter方法   .在右边调用getter方法
+    self.name = @"233";
+    NSString *newName = self.name;
+    NSLog(@"newName %@",newName);
+}
 @end

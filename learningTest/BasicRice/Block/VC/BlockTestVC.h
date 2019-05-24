@@ -17,4 +17,6 @@ typedef int (^SumBlock) (int a,int b);
 
 //block作为方法使用
 
+@property(nonatomic,strong)NSString *text;
+
 @end

@@ -93,6 +93,13 @@
 		18AB8E7E228518BE007A6BFC /* catTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8E7D228518BE007A6BFC /* catTableViewCell.m */; };
 		18AB8E8122851C35007A6BFC /* dogObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8E8022851C35007A6BFC /* dogObj.m */; };
 		18AB8E8422851C41007A6BFC /* catObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8E8322851C41007A6BFC /* catObj.m */; };
+		18B61ABB2297C4D1004E2BBB /* UIView+LXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AB32297C4D1004E2BBB /* UIView+LXView.m */; };
+		18B61ABC2297C4D1004E2BBB /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AB42297C4D1004E2BBB /* BlockAlertView.m */; };
+		18B61ABD2297C4D1004E2BBB /* UILabel+ZXYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AB52297C4D1004E2BBB /* UILabel+ZXYCategory.m */; };
+		18B61ABE2297C4D1004E2BBB /* UIButton+ZXYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AB62297C4D1004E2BBB /* UIButton+ZXYCategory.m */; };
+		18B61ABF2297C4D1004E2BBB /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AB72297C4D1004E2BBB /* UIAlertView+Blocks.m */; };
+		18B61AC02297C4D1004E2BBB /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61ABA2297C4D1004E2BBB /* UIBarButtonItem+Extension.m */; };
+		18B61AC32297CB53004E2BBB /* UIAlertController+cateGory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B61AC22297CB53004E2BBB /* UIAlertController+cateGory.m */; };
 		18CE5D5D20745D6D009BED20 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */; };
 		18CE5D60207462D8009BED20 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D5E207462D8009BED20 /* RSA.m */; };
 		18CE5D6620746412009BED20 /* MBProgressHUD+mutiLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE5D6220746412009BED20 /* MBProgressHUD+mutiLine.m */; };
@@ -344,6 +351,20 @@
 		18AB8E8222851C41007A6BFC /* catObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = catObj.h; sourceTree = "<group>"; };
 		18AB8E8322851C41007A6BFC /* catObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = catObj.m; sourceTree = "<group>"; };
 		18B61A5F229294A1004E2BBB /* setProtocoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setProtocoll.h; sourceTree = "<group>"; };
+		18B61AAF2297C4D1004E2BBB /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		18B61AB02297C4D1004E2BBB /* UIButton+ZXYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZXYCategory.h"; sourceTree = "<group>"; };
+		18B61AB12297C4D1004E2BBB /* UILabel+ZXYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ZXYCategory.h"; sourceTree = "<group>"; };
+		18B61AB22297C4D1004E2BBB /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		18B61AB32297C4D1004E2BBB /* UIView+LXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXView.m"; sourceTree = "<group>"; };
+		18B61AB42297C4D1004E2BBB /* BlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlertView.m; sourceTree = "<group>"; };
+		18B61AB52297C4D1004E2BBB /* UILabel+ZXYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ZXYCategory.m"; sourceTree = "<group>"; };
+		18B61AB62297C4D1004E2BBB /* UIButton+ZXYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZXYCategory.m"; sourceTree = "<group>"; };
+		18B61AB72297C4D1004E2BBB /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		18B61AB82297C4D1004E2BBB /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
+		18B61AB92297C4D1004E2BBB /* UIView+LXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXView.h"; sourceTree = "<group>"; };
+		18B61ABA2297C4D1004E2BBB /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		18B61AC12297CB53004E2BBB /* UIAlertController+cateGory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+cateGory.h"; sourceTree = "<group>"; };
+		18B61AC22297CB53004E2BBB /* UIAlertController+cateGory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+cateGory.m"; sourceTree = "<group>"; };
 		18CE5D5B20745D6D009BED20 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		18CE5D5C20745D6D009BED20 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		18CE5D5E207462D8009BED20 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
@@ -590,6 +611,7 @@
 				18F04D6E206CF34D00EC310A /* SmartHome */,
 				18F04D47206CF2A500EC310A /* OtherToys */,
 				18F04CF3206CF23500EC310A /* BasicRice */,
+				18F04D1E206CF23500EC310A /* 文字高度 */,
 				18F04B52206CE3D500EC310A /* AppResourse */,
 				18F04B63206CE3D600EC310A /* Main */,
 				185E29001FAB132E00CB8531 /* 3rds */,
@@ -755,6 +777,7 @@
 		18799EC3206DCEB700976EF1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18B61AAE2297C4D1004E2BBB /* category */,
 				18724047208045E900D7F0E0 /* ZXYBaseSegmentControl */,
 				18CE5D722074738B009BED20 /* GCDAsyncSocketManager.h */,
 				18CE5D732074738B009BED20 /* GCDAsyncSocketManager.m */,
@@ -864,6 +887,27 @@
 				18AB8E77228516A8007A6BFC /* cats.m */,
 			);
 			path = "tableview抽离datasoure";
+			sourceTree = "<group>";
+		};
+		18B61AAE2297C4D1004E2BBB /* category */ = {
+			isa = PBXGroup;
+			children = (
+				18B61AB12297C4D1004E2BBB /* UILabel+ZXYCategory.h */,
+				18B61AB22297C4D1004E2BBB /* UIBarButtonItem+Extension.h */,
+				18B61AB32297C4D1004E2BBB /* UIView+LXView.m */,
+				18B61AB52297C4D1004E2BBB /* UILabel+ZXYCategory.m */,
+				18B61AB02297C4D1004E2BBB /* UIButton+ZXYCategory.h */,
+				18B61AB62297C4D1004E2BBB /* UIButton+ZXYCategory.m */,
+				18B61AAF2297C4D1004E2BBB /* UIAlertView+Blocks.h */,
+				18B61AB72297C4D1004E2BBB /* UIAlertView+Blocks.m */,
+				18B61AB82297C4D1004E2BBB /* BlockAlertView.h */,
+				18B61AB42297C4D1004E2BBB /* BlockAlertView.m */,
+				18B61AB92297C4D1004E2BBB /* UIView+LXView.h */,
+				18B61ABA2297C4D1004E2BBB /* UIBarButtonItem+Extension.m */,
+				18B61AC12297CB53004E2BBB /* UIAlertController+cateGory.h */,
+				18B61AC22297CB53004E2BBB /* UIAlertController+cateGory.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		18CE5D5A20745D4F009BED20 /* View */ = {
@@ -980,13 +1024,12 @@
 				18F04CF4206CF23500EC310A /* Block */,
 				18F04CFA206CF23500EC310A /* CoreData */,
 				18F04CFC206CF23500EC310A /* frame和bounds */,
-				18F04CFF206CF23500EC310A /* GCD */,
+				18F04CFF206CF23500EC310A /* GCD多线程 */,
 				18F04D02206CF23500EC310A /* RuntimeRunloop */,
 				18F04D12206CF23500EC310A /* UIViewAnimation */,
 				18F04D15206CF23500EC310A /* 导航栏细线 */,
 				18F04D18206CF23500EC310A /* 属性强弱引用 */,
 				18F04D1B206CF23500EC310A /* 排序 */,
-				18F04D1E206CF23500EC310A /* 文字高度 */,
 				18F04D21206CF23500EC310A /* 断言NSAssert */,
 				18F04D26206CF23500EC310A /* 类的本质 */,
 				18F04D29206CF23500EC310A /* 静态库制作 */,
@@ -1038,13 +1081,13 @@
 			path = "frame和bounds";
 			sourceTree = "<group>";
 		};
-		18F04CFF206CF23500EC310A /* GCD */ = {
+		18F04CFF206CF23500EC310A /* GCD多线程 */ = {
 			isa = PBXGroup;
 			children = (
 				18F04D00206CF23500EC310A /* GCDVC.h */,
 				18F04D01206CF23500EC310A /* GCDVC.m */,
 			);
-			path = GCD;
+			path = "GCD多线程";
 			sourceTree = "<group>";
 		};
 		18F04D02206CF23500EC310A /* RuntimeRunloop */ = {
@@ -1528,9 +1571,12 @@
 			files = (
 				18F04B80206CE3D600EC310A /* AppDelegate.m in Sources */,
 				18F04D63206CF2BE00EC310A /* DictModel.m in Sources */,
+				18B61AC32297CB53004E2BBB /* UIAlertController+cateGory.m in Sources */,
+				18B61ABD2297C4D1004E2BBB /* UILabel+ZXYCategory.m in Sources */,
 				18F04D33206CF23500EC310A /* ViewControllerI.m in Sources */,
 				1872404F2080902400D7F0E0 /* RSAViewController.m in Sources */,
 				18F04D6D206CF2DC00EC310A /* TestVC.m in Sources */,
+				18B61AC02297C4D1004E2BBB /* UIBarButtonItem+Extension.m in Sources */,
 				18DC5952222CF8F500070777 /* dog.m in Sources */,
 				18F04B9E206CEB6800EC310A /* UIButton+LYButton.m in Sources */,
 				189C540722156A1E00EA525D /* QiCardViewCell.m in Sources */,
@@ -1558,7 +1604,9 @@
 				18F04D32206CF23500EC310A /* BlockTestVC.m in Sources */,
 				189C540322156A1E00EA525D /* QiViewController.m in Sources */,
 				18F04D6C206CF2DC00EC310A /* Helper.m in Sources */,
+				18B61ABC2297C4D1004E2BBB /* BlockAlertView.m in Sources */,
 				189C540522156A1E00EA525D /* QiDataModel.m in Sources */,
+				18B61ABE2297C4D1004E2BBB /* UIButton+ZXYCategory.m in Sources */,
 				18360EBA21F081C900672DAA /* ZYLauchMovieViewController.m in Sources */,
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
@@ -1613,10 +1661,12 @@
 				18CE5D742074738B009BED20 /* GCDAsyncSocketManager.m in Sources */,
 				18F04D4E206CF2A500EC310A /* JAVAViewController.m in Sources */,
 				185E299D1FAB18D000CB8531 /* UIWebView+AFNetworking.m in Sources */,
+				18B61ABB2297C4D1004E2BBB /* UIView+LXView.m in Sources */,
 				18F04D3B206CF23500EC310A /* TestClass.m in Sources */,
 				18F04D37206CF23500EC310A /* RuntimeKit.m in Sources */,
 				185E298E1FAB18D000CB8531 /* AFNetworkReachabilityManager.m in Sources */,
 				18AB8E7222851643007A6BFC /* ArrayDataSource.m in Sources */,
+				18B61ABF2297C4D1004E2BBB /* UIAlertView+Blocks.m in Sources */,
 				189C540822156A1E00EA525D /* QiCardItemCell.m in Sources */,
 				18F04D41206CF23500EC310A /* AssertVC.m in Sources */,
 			);
