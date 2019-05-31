@@ -19,6 +19,8 @@
 		181D4EA4207375BB0003274A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D4EA3207375BB0003274A /* Security.framework */; };
 		181D4EAB207385BC0003274A /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EA6207385BC0003274A /* NSString+AES.m */; };
 		181D4EAC207385BC0003274A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D4EAA207385BC0003274A /* GTMBase64.m */; };
+		18229265229D2D420020925F /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18229264229D2D420020925F /* ViewController1.m */; };
+		1822926C229E83B20020925F /* keyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822926B229E83B20020925F /* keyChain.m */; };
 		182A4ABC2069D28B00EAC437 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B2041FAC42B6004746EA /* IJKMediaFramework.framework */; };
 		18360EB721EC82F200672DAA /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18360EB621EC82F200672DAA /* OperationViewController.m */; };
 		18360EBA21F081C900672DAA /* ZYLauchMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18360EB921F081C900672DAA /* ZYLauchMovieViewController.m */; };
@@ -225,6 +227,10 @@
 		181D4EA8207385BC0003274A /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		181D4EA9207385BC0003274A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		181D4EAA207385BC0003274A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		18229263229D2D420020925F /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		18229264229D2D420020925F /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		1822926A229E83B20020925F /* keyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keyChain.h; sourceTree = "<group>"; };
+		1822926B229E83B20020925F /* keyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keyChain.m; sourceTree = "<group>"; };
 		18360EB521EC82F200672DAA /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
 		18360EB621EC82F200672DAA /* OperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
 		18360EB821F081C900672DAA /* ZYLauchMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLauchMovieViewController.h; sourceTree = "<group>"; };
@@ -741,6 +747,8 @@
 				186686152229086B0005CEA3 /* reamldog.m */,
 				186686172229094F0005CEA3 /* dataViewController.h */,
 				186686182229094F0005CEA3 /* dataViewController.m */,
+				1822926A229E83B20020925F /* keyChain.h */,
+				1822926B229E83B20020925F /* keyChain.m */,
 			);
 			path = "数据库";
 			sourceTree = "<group>";
@@ -1084,6 +1092,8 @@
 		18F04CFF206CF23500EC310A /* GCD多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				18229263229D2D420020925F /* ViewController1.h */,
+				18229264229D2D420020925F /* ViewController1.m */,
 				18F04D00206CF23500EC310A /* GCDVC.h */,
 				18F04D01206CF23500EC310A /* GCDVC.m */,
 			);
@@ -1398,6 +1408,7 @@
 		185BCE751F8F525E00D1BEBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
@@ -1633,6 +1644,7 @@
 				18AB8E8422851C41007A6BFC /* catObj.m in Sources */,
 				181D4EAC207385BC0003274A /* GTMBase64.m in Sources */,
 				18F04D62206CF2BE00EC310A /* Book.m in Sources */,
+				18229265229D2D420020925F /* ViewController1.m in Sources */,
 				1819FEDF2243AEB9001D65CE /* NSString+Emoji.m in Sources */,
 				18F04D42206CF23500EC310A /* MyAssertHandler.m in Sources */,
 				1805EA1521FC4E1D006EA5F0 /* JSWebViewController.m in Sources */,
@@ -1669,6 +1681,7 @@
 				18B61ABF2297C4D1004E2BBB /* UIAlertView+Blocks.m in Sources */,
 				189C540822156A1E00EA525D /* QiCardItemCell.m in Sources */,
 				18F04D41206CF23500EC310A /* AssertVC.m in Sources */,
+				1822926C229E83B20020925F /* keyChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

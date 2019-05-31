@@ -14,9 +14,7 @@
     self = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     __weak typeof(self)weakSelf = self;
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        if (weakSelf.forgetBlock) {
-            weakSelf.forgetBlock();
-        };
+
     }];
     
     [self addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

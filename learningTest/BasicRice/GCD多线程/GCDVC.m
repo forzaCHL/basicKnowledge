@@ -7,7 +7,7 @@
 //
 
 #import "GCDVC.h"
-
+#import "ViewController1.h"
 @interface GCDVC ()
 
 @end
@@ -77,4 +77,12 @@
         
     });
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    ViewController1 *vc = [[ViewController1 alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+
+
 @end
