@@ -8,6 +8,8 @@
 
 #import "dataViewController.h"
 #import "reamldog.h"
+#import "YYKeychain.h"
+#import "keyChain.h"
 
 @interface dataViewController ()
 
@@ -166,9 +168,16 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *name = [userDefault objectForKey:@"user_name"];
     NSLog(@"name -->%@",name);
+    
+    keyChain *vc = [[keyChain alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 #pragma mark -----------nsuserdefault
 -(void)nsuserdefault{
 //    NSUserDefaults *
 }
+
+
+
 @end

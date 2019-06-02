@@ -11,6 +11,8 @@
 @implementation UIAlertController (cateGory)
 
 -(instancetype)initWithTitle:(NSString *)title message:(NSString *)message style:(UIAlertControllerStyle)style cancleAction:(nonnull canCleBlock)cancle sureAction:(nonnull UIAlertAction *)sure{
+    
+    
 
     self = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     if (self) {
