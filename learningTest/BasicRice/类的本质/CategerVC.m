@@ -62,6 +62,8 @@
     BOOL re2 = [CategerVC isMemberOfClass:[CategerVC class]];
     BOOL re3 = [NSObject isKindOfClass:[NSObject class]];
     BOOL re4 = [NSObject isMemberOfClass:[NSObject class]];
+    [self value];
+    
 }
 -(void)methods{
     NSLog(@"CategerVC");
@@ -106,4 +108,16 @@
      3.3.返回对象
 
  */
+#pragma mark ----------- 成员变量（实例变量）与属性
+-(void)value{
+//    self.tree = @"123";  报错
+    self -> tree = @"123 ";
+    NSLog(@"tree %@",tree);
+    
+    
+//    .在左边调用setter方法   .在右边调用getter方法
+    self.name = @"233";
+    NSString *newName = self.name;
+    NSLog(@"newName %@",newName);
+}
 @end

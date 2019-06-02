@@ -39,6 +39,6 @@ typedef void(^returnString) (NSString *str);
 
 //Block作为返回值
 - (void(^)(int))showblockii;
-
+@property(nonatomic,copy)NSString *text;
 @property(nonatomic,assign)id <Protocol> delegate;
 @end
