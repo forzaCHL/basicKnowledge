@@ -17,21 +17,28 @@
 #import "LianshiViewController.h"
 #import "dataViewController.h"
 #import "dog.h"
-
+#import "PropertyViewController.h"
 @interface BasicVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSArray *array;
+
+
+
 @end
 
 @implementation BasicVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Basic things";
     self.navigationController.navigationBar.translucent = YES;
-    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试",@"算法排序", @"JScallOC",@"OCcallJS",@"卡片",@"链式编程",@"数据储存",nil];
+    _array = [[NSArray alloc]initWithObjects:@"正则判断",@"Http",@"Block",@"CoreData",@"frame和bounds",@"GCD",@"Runtime",@"UIViewAnimation",@"导航栏细线",@"属性强弱引用",@"排序",@"文字高度",@"NSAssert",@"类的本质",@"静态库制作与使用",@"定时任务",@"基础面试",@"算法排序", @"JScallOC",@"OCcallJS",@"卡片",@"链式编程",@"数据储存",@"属性修饰",nil];
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -135,7 +142,7 @@
         PropertyVC *vc = [PropertyVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"排序"]){
-        TestVC *vc = [TestVC new];
+        SortVC *vc = [SortVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"文字高度"]){
         GetTextHeight *vc = [GetTextHeight new];
@@ -172,6 +179,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([title isEqualToString:@"数据储存"]){
         dataViewController *vc = [dataViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"属性修饰"]){
+        PropertyViewController *vc = [PropertyViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

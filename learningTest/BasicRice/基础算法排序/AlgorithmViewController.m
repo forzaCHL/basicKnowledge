@@ -102,7 +102,7 @@
     int a = 10;  int b = 12;
 
 //    1.1使用中间变量
-    int temp = b;// 1-10 b-12 temp-12
+    int temp = b;// a-10 b-12 temp-12
     b = a;//a-10 b-10 temp-12
     a = temp;//a-12  b-10 temp-12
 

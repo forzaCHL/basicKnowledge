@@ -38,11 +38,15 @@ static int port = 8888;
     self.navigationItem.title = @"Interesting";
     [self setUpSocket];
     [self addChildVC];
-    [self setupTopTabbar];
+//    [self setupTopTabbar];
 }
 #pragma mark ----------- Socket{
 -(void)setUpSocket{
     self.socketManger = [GCDAsyncSocketManager sharedInstance];
+    //创建之后不会再继续调用init方法
+    GCDAsyncSocketManager *manger = [GCDAsyncSocketManager sharedInstance];
+    
+    
     [self.socketManger changeHost:host port:port];
     [self.socketManger connectSocketWithDelegate:self];
 }
@@ -81,5 +85,8 @@ static int port = 8888;
         make.top.equalTo(self.segmentControl.mas_bottom).offset(2.5);
         make.left.right.bottom.equalTo(self.view);
     }];
+}
+-(void)socket{
+//    CFSocketRef
 }
 @end

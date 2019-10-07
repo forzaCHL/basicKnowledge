@@ -24,4 +24,8 @@
 +(id)provinceWithDict:(NSDictionary *)dict{
     return [[self alloc] initWithDict:dict];
 }
+//kvc
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+}
 @end

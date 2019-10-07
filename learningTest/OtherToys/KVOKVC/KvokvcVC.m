@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    [self KVCMethod];
+    [self KVCMethod];
     [self KVOMethod];
 }
 -(void)KVCMethod{
@@ -88,6 +88,7 @@
      给私有属性赋值
      */
     [dog setValue:@888888 forKey:@"money"];
+    
     [dog showMsg];
 }
 -(void)KVOMethod{

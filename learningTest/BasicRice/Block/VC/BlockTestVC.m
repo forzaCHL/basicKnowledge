@@ -11,6 +11,9 @@
 #import "setProtocoll.h"
 @interface BlockTestVC ()<Protocol,setProtocoll>
 
+
+
+
 @end
 
 @implementation BlockTestVC
@@ -28,6 +31,35 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(nsObserver:) name:@"ns1" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(nsObserver2:) name:@"ns2" object:nil];
     
+//    NSLog(@"1");
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        NSLog(@"2");
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"3");
+//        });
+//        NSLog(@"4");
+//    });
+//    NSLog(@"5");
+    
+    
+    dispatch_queue_t q = dispatch_queue_create("hhhhh", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_async(q, ^{
+        
+        NSLog(@" %@----111", [NSThread currentThread]);
+        
+//        dispatch_sync(q, ^{
+//           
+//            NSLog(@" %@----2222", [NSThread currentThread]);
+//        });
+    });
+    
+//    NSLog(@"111");
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"main");
+//    });
+//    NSLog(@"222");
+    
 }
 - (void)setEat{
     NSLog(@"setEat");
@@ -44,15 +76,21 @@
 }
 -(void)pushVC{
     
+    int a = 10;
+    
     ViewControllerI *vc = [ViewControllerI new];
     vc.delegate = self;
     [self.navigationController pushViewController:vc animated:YES];
+   
     //属性
     vc.strBlock = ^(NSString *str) {
         NSLog(@"str -->%@",str);
+        __block a = 12;
+        NSLog(@"a  = %d",a);
     };
     vc.BlockII = ^(NSString *str) {
         NSLog(@"str -->%@",str);
+                
     };
     //方法参数
     [vc blckmtthod];

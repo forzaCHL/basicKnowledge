@@ -171,6 +171,7 @@
 		18F04D66206CF2BE00EC310A /* Master.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F04D5F206CF2BE00EC310A /* Master.m */; };
 		18F04D6C206CF2DC00EC310A /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F04D69206CF2DC00EC310A /* Helper.m */; };
 		18F04D6D206CF2DC00EC310A /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F04D6B206CF2DC00EC310A /* TestVC.m */; };
+		74A375FE233B479500EC4F95 /* PropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A375FD233B479500EC4F95 /* PropertyViewController.m */; };
 		AF44B2305CF343B3B95319AE /* libPods-learningTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD34E29CE458EF5F8822F19 /* libPods-learningTest.a */; };
 /* End PBXBuildFile section */
 
@@ -484,6 +485,8 @@
 		18F04D69206CF2DC00EC310A /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		18F04D6A206CF2DC00EC310A /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		18F04D6B206CF2DC00EC310A /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		74A375FC233B479500EC4F95 /* PropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyViewController.h; sourceTree = "<group>"; };
+		74A375FD233B479500EC4F95 /* PropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyViewController.m; sourceTree = "<group>"; };
 		A24BAC5195246AFE0401CBEB /* Pods-learningTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learningTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-learningTest/Pods-learningTest.release.xcconfig"; sourceTree = "<group>"; };
 		EBA1EC7233CEA4FB5C576DDF /* Pods-learningTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learningTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learningTest/Pods-learningTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD34E29CE458EF5F8822F19 /* libPods-learningTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learningTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -901,9 +904,9 @@
 			isa = PBXGroup;
 			children = (
 				18B61AB12297C4D1004E2BBB /* UILabel+ZXYCategory.h */,
+				18B61AB52297C4D1004E2BBB /* UILabel+ZXYCategory.m */,
 				18B61AB22297C4D1004E2BBB /* UIBarButtonItem+Extension.h */,
 				18B61AB32297C4D1004E2BBB /* UIView+LXView.m */,
-				18B61AB52297C4D1004E2BBB /* UILabel+ZXYCategory.m */,
 				18B61AB02297C4D1004E2BBB /* UIButton+ZXYCategory.h */,
 				18B61AB62297C4D1004E2BBB /* UIButton+ZXYCategory.m */,
 				18B61AAF2297C4D1004E2BBB /* UIAlertView+Blocks.h */,
@@ -1021,6 +1024,8 @@
 				186686132229082B0005CEA3 /* 数据库 */,
 				18F04B68206CE3D600EC310A /* BasicVC.h */,
 				18F04B69206CE3D600EC310A /* BasicVC.m */,
+				74A375FC233B479500EC4F95 /* PropertyViewController.h */,
+				74A375FD233B479500EC4F95 /* PropertyViewController.m */,
 				189C540B221644A500EA525D /* 链式编程 */,
 				189C53EE22156A1E00EA525D /* QiCardView */,
 				1805EA1221FC4E0C006EA5F0 /* js交互 */,
@@ -1622,6 +1627,7 @@
 				18F04D3A206CF23500EC310A /* TestClass+SwapMethod.m in Sources */,
 				18F04D46206CF23500EC310A /* StaticLibraryVC.m in Sources */,
 				187240522080904000D7F0E0 /* BannerView.m in Sources */,
+				74A375FE233B479500EC4F95 /* PropertyViewController.m in Sources */,
 				18F04D61206CF2BE00EC310A /* Author.m in Sources */,
 				187A71C6207C4CA800B67F43 /* delayVC.m in Sources */,
 				1805EA1C21FC5F68006EA5F0 /* OCCallJSViewController.m in Sources */,

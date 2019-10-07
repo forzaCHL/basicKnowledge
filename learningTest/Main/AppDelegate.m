@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ZYLauchMovieViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>//touchID
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 
 #define kIsFirstLauchApp @"kIsFirstLauchApp"
@@ -58,6 +59,7 @@ void gloablException(NSException * exception) {
 +(AppDelegate *)shareInstance{
     return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
+#pragma mark -- appdelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // 捕获所有异常
@@ -74,8 +76,18 @@ void gloablException(NSException * exception) {
     }
     [self netWorkChangeEvent];
     [self setUpMusicOptionsWithNormal:YES];
-
+    
+    NSString *proxy = [self fetchHttpProxy];
+    NSLog(@"proxy %@",proxy);
     return YES;
+}
+#pragma mark -- 检测手机是否设置代理
+- (NSString *)fetchHttpProxy {
+    CFDictionaryRef dicRef = CFNetworkCopySystemProxySettings();
+    const CFStringRef proxyCFstr = (const CFStringRef)CFDictionaryGetValue(dicRef,
+                                                                           (const void*)kCFNetworkProxiesHTTPProxy);
+    NSString* proxy = (__bridge NSString *)proxyCFstr;
+    return  proxy;
 }
 #pragma mark -- 是否第一次进入app
 - (BOOL)isFirstLauchApp {

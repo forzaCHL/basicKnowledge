@@ -11,6 +11,8 @@
 #import "NSString+Emoji.h"
 #import "CategerVC+category.h"
 
+#import <objc/runtime.h>
+#import <malloc/malloc.h>
 
 @interface CategerVC ()
 
@@ -19,6 +21,9 @@
  作用：快速定义类的私有属性
  */
 @property (nonatomic, strong) NSString *boss;
+
+@property (nonatomic, strong) NSMutableArray *mutableArray;
+
 - (void)bossAngry; // 扩展方法
 
 @end
@@ -31,7 +36,7 @@
     cateSubVC *vc = [cateSubVC new];
     [self methods];
     [vc methods];
-    
+//    [self getMallcSize];
     NSString *biaoqing = @"😊";
     NSString *wenzi = @"wenzi";
 
@@ -63,7 +68,7 @@
     BOOL re3 = [NSObject isKindOfClass:[NSObject class]];
     BOOL re4 = [NSObject isMemberOfClass:[NSObject class]];
     [self value];
-    
+    [self copyArray];
 }
 -(void)methods{
     NSLog(@"CategerVC");
@@ -119,5 +124,30 @@
     self.name = @"233";
     NSString *newName = self.name;
     NSLog(@"newName %@",newName);
+}
+#pragma mark ----------- 获取内存长度
+-(void)getMallcSize{
+    NSObject *objc = [NSObject new];
+    NSInteger it = 0;
+    int intValue  = 0;
+    cateSubVC *Vc = [cateSubVC new];
+    NSLog(@"objc对象实际需要的内存大小: %zd", class_getInstanceSize([objc class]));
+    NSLog(@"objc对象实际分配的内存大小: %zd", malloc_size((__bridge const void *)(objc)));
+
+    NSLog(@"cateSubVC对象实际需要的内存大小: %zd", class_getInstanceSize([Vc class]));
+    NSLog(@"cateSubVC对象实际分配的内存大小: %zd", malloc_size((__bridge const void *)(Vc)));
+
+}
+#pragma mark ----------- 深拷贝浅拷贝
+-(void)copyArray{
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"1",@"2",nil];
+//    NSArray *array = [NSArray arrayWithObjects:@"1",@"2",nil];
+    self.mutableArray = [[NSMutableArray alloc]initWithArray:array];
+    [self.mutableArray removeObjectAtIndex:0];
+    
+    NSLog(@"array %@",array);
+    NSLog(@"self.array %@",self.mutableArray);
+
+    
 }
 @end

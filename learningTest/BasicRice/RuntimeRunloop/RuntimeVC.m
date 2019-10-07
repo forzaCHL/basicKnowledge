@@ -18,7 +18,7 @@
 #import "TestClass+SwapMethod.h"
 #import "TestClass+AssociatedObject.h"
 #import "RuntimeKit.h"
-
+#import "NSString+Emoji.h"
 
 @interface RuntimeVC ()
 
@@ -36,8 +36,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     NSString *className = NSStringFromClass([self class]);
     NSLog(@"%@ will appear", className);
-//    [self performSelector];
-    [self addProperty];
+    [self performSelector];
+//    [self addProperty];
     
 //    [self methodFromGithub];
 }
@@ -66,12 +66,16 @@
 //    可以添加一个.h文件没有声明  .m文件实现了的方法
     [vc performSelector:@selector(testRuntimeIII)];
 }
-#pragma mark ----------- 添加属性
+#pragma mark ----------- 添加属性  给Emoji分类设置属性
 -(void)addProperty{
-    TestVC *vc = [[TestVC alloc]init];
-    NSLog(@"1->vc.testString%@",vc.testString);
-    vc.testString = @"赋值之后有了吧";
-    NSLog(@"2->vc.testString%@",vc.testString);
+    
+    NSString *wenzi = @"wenzi";
+
+    wenzi.cateText = @"demo1";
+    NSLog(@"0获取关联属性：%@",wenzi.cateText);
+    
+    [wenzi clearAssociatedObject];
+    NSLog(@"1获取关联属性：%@",wenzi.cateText);
 }
 #pragma mark ----------- 字典转模型
 
@@ -107,4 +111,5 @@
     [instance swapMethod];
     [instance method1];
 }
+
 @end
